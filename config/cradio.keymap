@@ -93,7 +93,7 @@
             &trans      &kp F5     &kp F6     &kp F7     &kp F8         &kp LEFT  &kp DOWN    &kp UP    &kp RIGHT   &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │    F9    │    F10   │   F11    │   F12    │   │ SCRL_UP  │ SCRL_DOWN│   PG_DN  │   END    │   DEL    │
-            &trans      &kp F9     &kp F10    &kp F11    &kp F12    &msc SCRL_UP &msc SCRL_DOWN &kp PG_DN &kp END   &kp DEL
+            &trans      &kp F9     &kp F10    &kp F11    &kp F12       &trans    &trans     &kp PG_DN  &kp END    &kp DEL
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
