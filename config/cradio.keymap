@@ -9,8 +9,8 @@
 //#define HRML(k1,k2,k3,k4) &ht LSHFT k1  &ht LALT k2  &ht LCTRL k3  &ht LGUI k4
 //#define HRMR(k1,k2,k3,k4) &ht RGUI k1  &ht RCTRL k2  &ht RALT k3  &ht RSHFT k4
 
-#define HRML(k1,k2,k3,k4) &ht LALT k1  &ht LSHFT k2  &ht LGUI k3  &lt 1 k4
-#define HRMR(k1,k2,k3,k4) &lt 1 k1  &ht RGUI k2  &ht RSHFT k3  &ht RALT k4
+#define HRML(k1,k2,k3,k4) &ht LCTRL k1  &ht LALT k2  &ht LGUI k3  &lt 1 k4
+#define HRMR(k1,k2,k3,k4) &lt 1 k1  &ht RGUI k2  &ht RALT k3  &ht RCTRL k4
 
 / {
     behaviors {
@@ -42,12 +42,14 @@
             &kp Q      &kp W      &kp F      &kp P      &kp B          &kp J      &kp L      &kp U      &kp Y      &kp BSPC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  R       │  S       │  T       │  G       │   │  M       │  N       │  E       │  I       │  O       │
-          HRML(A,       R,         S,         T)        &kp G          &kp M      HRMR(N,     E,         I,         O)
+            &kp A      &kp R      &kp S      &kp T      &kp G          &kp M      &kp N      &kp E      &kp I      &kp O
+        //  HRML(A,       R,         S,         T)        &kp G          &kp M      HRMR(N,     E,         I,         O)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  D       │  V       │   │  K       │  H       │  , <     │  . >     │  / ?     │
-          &mt LCTRL Z  &kp X      &kp C      &kp D      &kp V          &kp K      &kp H      &kp COMMA &kp DOT &mt RCTRL FSLH
+            HRML(Z,       X,         C,         D)        &kp V          &kp K     HRMR(H,     COMMA,     DOT,       ENTER)
+        //  &mt LCTRL Z  &kp X      &kp C      &kp D      &kp V          &kp K      &kp H      &kp COMMA &kp DOT &mt RCTRL FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &lt 2 ESC  &kp SPACE      &kp ENTER  &lt 3 TAB
+                                         &lt 2 ESC  &mt LSHIFT SPACE &mt RSHIFT FSLH  &lt 3 TAB
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
