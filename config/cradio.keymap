@@ -31,7 +31,7 @@
 //    conditional_layers {
 //        compatible = "zmk,conditional-layers";
 //        tri_layer {
-//            if-layers = <1 2>;
+//            if-layers = <17 18>;
 //            then-layer = <3>;
 //        };
 //    };
