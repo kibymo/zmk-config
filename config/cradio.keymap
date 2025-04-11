@@ -213,6 +213,12 @@
             key-positions = <24 23>;
             timeout-ms = <50>;
         };
+
+        combo_del {
+            bindings = <&kp DEL>;
+            key-positions = <29 28>;
+            timeout-ms = <50>;
+        };
     };
 
     keymap {
