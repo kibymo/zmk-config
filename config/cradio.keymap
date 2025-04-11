@@ -154,63 +154,63 @@
             timeout-ms = <50>;
         };
 
-        combo_dqt {
-            bindings = <&kp DQT>;
-            key-positions = <8 9>;
+        combo_at {
+            bindings = <&kp AT>;
+            key-positions = <1 2>;
             timeout-ms = <50>;
         };
 
-        combo_sqt {
-            bindings = <&kp SQT>;
-            key-positions = <18 19>;
+        combo_caret {
+            bindings = <&kp CARET>;
+            key-positions = <11 12>;
             timeout-ms = <50>;
         };
 
-        combo_pipe {
-            bindings = <&kp PIPE>;
-            key-positions = <19 9>;
+        combo_hash {
+            bindings = <&kp HASH>;
+            key-positions = <2 3>;
             timeout-ms = <50>;
         };
 
-        combo_qmark {
-            bindings = <&kp BSLH>;
-            key-positions = <19 29>;
+        combo_amps {
+            bindings = <&kp AMPS>;
+            key-positions = <12 13>;
             timeout-ms = <50>;
         };
 
-        combo_lbkt {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <25 26>;
+        combo_dllr {
+            bindings = <&kp DLLR>;
+            key-positions = <3 4>;
             timeout-ms = <50>;
         };
 
-        combo_rbkt {
-            bindings = <&kp RBKT>;
-            key-positions = <26 27>;
+        combo_astrk {
+            bindings = <&kp ASTRK>;
+            key-positions = <13 14>;
             timeout-ms = <50>;
         };
 
-        combo_tilde {
-            bindings = <&kp TILDE>;
-            key-positions = <0 10>;
+        combo_lbrc {
+            bindings = <&kp LBRC>;
+            key-positions = <20 21>;
             timeout-ms = <50>;
         };
 
-        combo_grave {
-            bindings = <&kp GRAVE>;
-            key-positions = <10 20>;
+        combo_rbrc {
+            bindings = <&kp RBRC>;
+            key-positions = <21 22>;
             timeout-ms = <50>;
         };
 
-        combo_excl {
-            bindings = <&kp EXCL>;
-            key-positions = <1 0>;
+        combo_lpar {
+            bindings = <&kp LPAR>;
+            key-positions = <22 23>;
             timeout-ms = <50>;
         };
 
-        combo_percent {
-            bindings = <&kp PERCENT>;
-            key-positions = <10 11>;
+        combo_rpar {
+            bindings = <&kp RPAR>;
+            key-positions = <24 23>;
             timeout-ms = <50>;
         };
     };
