@@ -208,6 +208,12 @@
             timeout-ms = <50>;
         };
 
+        combo_rpar {
+            bindings = <&kp RPAR>;
+            key-positions = <24 23>;
+            timeout-ms = <50>;
+        };
+
         combo_n1 {
             bindings = <&kp N1>;
             key-positions = <26 16>;
@@ -265,12 +271,6 @@
         combo_n0 {
             bindings = <&kp N0>;
             key-positions = <26 8>;
-            timeout-ms = <50>;
-        };
-
-        combo_rpar {
-            bindings = <&kp RPAR>;
-            key-positions = <24 23>;
             timeout-ms = <50>;
         };
 
