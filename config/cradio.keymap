@@ -153,6 +153,66 @@
             key-positions = <10 11>;
             timeout-ms = <50>;
         };
+
+        combo_dqt {
+            bindings = <&kp DQT>;
+            key-positions = <8 9>;
+            timeout-ms = <50>;
+        };
+
+        combo_sqt {
+            bindings = <&kp SQT>;
+            key-positions = <18 19>;
+            timeout-ms = <50>;
+        };
+
+        combo_pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <19 9>;
+            timeout-ms = <50>;
+        };
+
+        combo_qmark {
+            bindings = <&kp BSLH>;
+            key-positions = <19 29>;
+            timeout-ms = <50>;
+        };
+
+        combo_lbkt {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <25 26>;
+            timeout-ms = <50>;
+        };
+
+        combo_rbkt {
+            bindings = <&kp RBKT>;
+            key-positions = <26 27>;
+            timeout-ms = <50>;
+        };
+
+        combo_tilde {
+            bindings = <&kp TILDE>;
+            key-positions = <0 10>;
+            timeout-ms = <50>;
+        };
+
+        combo_grave {
+            bindings = <&kp GRAVE>;
+            key-positions = <10 20>;
+            timeout-ms = <50>;
+        };
+
+        combo_excl {
+            bindings = <&kp EXCL>;
+            key-positions = <1 0>;
+            timeout-ms = <50>;
+        };
+
+        combo_percent {
+            bindings = <&kp PERCENT>;
+            key-positions = <10 11>;
+            timeout-ms = <50>;
+        };
     };
 
     keymap {
