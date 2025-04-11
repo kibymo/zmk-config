@@ -219,6 +219,65 @@
             key-positions = <29 28>;
             timeout-ms = <50>;
         };
+        combo_caret {
+            bindings = <&kp CARET>;
+            key-positions = <11 12>;
+            timeout-ms = <50>;
+        };
+
+        combo_hash {
+            bindings = <&kp HASH>;
+            key-positions = <2 3>;
+            timeout-ms = <50>;
+        };
+
+        combo_amps {
+            bindings = <&kp AMPS>;
+            key-positions = <12 13>;
+            timeout-ms = <50>;
+        };
+
+        combo_dllr {
+            bindings = <&kp DLLR>;
+            key-positions = <3 4>;
+            timeout-ms = <50>;
+        };
+
+        combo_astrk {
+            bindings = <&kp ASTRK>;
+            key-positions = <13 14>;
+            timeout-ms = <50>;
+        };
+
+        combo_lbrc {
+            bindings = <&kp LBRC>;
+            key-positions = <20 21>;
+            timeout-ms = <50>;
+        };
+
+        combo_rbrc {
+            bindings = <&kp RBRC>;
+            key-positions = <21 22>;
+            timeout-ms = <50>;
+        };
+
+        combo_lpar {
+            bindings = <&kp LPAR>;
+            key-positions = <22 23>;
+            timeout-ms = <50>;
+        };
+
+        combo_rpar {
+            bindings = <&kp RPAR>;
+            key-positions = <24 23>;
+            timeout-ms = <50>;
+        };
+
+        combo_del {
+            bindings = <&kp DEL>;
+            key-positions = <29 28>;
+            timeout-ms = <50>;
+        };
     };
 
     keymap {
