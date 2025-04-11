@@ -130,27 +130,27 @@
             timeout-ms = <50>;
         };
 
-        combo_left {
-            bindings = <&kp LEFT>;
-            key-positions = <15 25>;
+        combo_tilde {
+            bindings = <&kp TILDE>;
+            key-positions = <0 10>;
             timeout-ms = <50>;
         };
 
-        combo_down {
-            bindings = <&kp DOWN>;
-            key-positions = <16 26>;
+        combo_grave {
+            bindings = <&kp GRAVE>;
+            key-positions = <10 20>;
             timeout-ms = <50>;
         };
 
-        combo_up {
-            bindings = <&kp UP>;
-            key-positions = <17 27>;
+        combo_excl {
+            bindings = <&kp EXCL>;
+            key-positions = <1 0>;
             timeout-ms = <50>;
         };
 
-        combo_right {
-            bindings = <&kp RIGHT>;
-            key-positions = <18 28>;
+        combo_percent {
+            bindings = <&kp PERCENT>;
+            key-positions = <10 11>;
             timeout-ms = <50>;
         };
     };
