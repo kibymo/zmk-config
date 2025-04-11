@@ -70,6 +70,18 @@
             timeout-ms = <50>;
         };
 
+        combo_plus {
+            bindings = <&kp PLUS>;
+            key-positions = <6 7>;
+            timeout-ms = <50>;
+        };
+
+        combo_equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <16 17>;
+            timeout-ms = <50>;
+        };
+
         combo_colon {
             bindings = <&kp COLON>;
             key-positions = <7 8>;
@@ -106,15 +118,15 @@
             timeout-ms = <50>;
         };
 
-        combo_plus {
-            bindings = <&kp PLUS>;
-            key-positions = <6 7>;
+        combo_lbkt {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <25 26>;
             timeout-ms = <50>;
         };
 
-        combo_equal {
-            bindings = <&kp EQUAL>;
-            key-positions = <16 17>;
+        combo_rbkt {
+            bindings = <&kp RBKT>;
+            key-positions = <26 27>;
             timeout-ms = <50>;
         };
 
@@ -139,18 +151,6 @@
         combo_right {
             bindings = <&kp RIGHT>;
             key-positions = <18 28>;
-            timeout-ms = <50>;
-        };
-
-        combo_lbkt {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <25 26>;
-            timeout-ms = <50>;
-        };
-
-        combo_rbkt {
-            bindings = <&kp RBKT>;
-            key-positions = <26 27>;
             timeout-ms = <50>;
         };
     };
