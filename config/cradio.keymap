@@ -35,61 +35,6 @@
     //        };
     //    };
 
-    combos {
-        compatible = "zmk,combos";
-
-        combo_enter {
-            timeout-ms = <50>;
-            key-positions = <16 17>;
-            bindings = <&kp ENTER>;
-        };
-
-        combo_tog3 {
-            timeout-ms = <50>;
-            key-positions = <7 27>;
-            bindings = <&tog 3>;
-        };
-
-        combo_under {
-            bindings = <&kp UNDER>;
-            key-positions = <5 6>;
-        };
-
-        combo_minus {
-            bindings = <&kp MINUS>;
-            key-positions = <15 16>;
-        };
-
-        combo_colon {
-            bindings = <&kp COLON>;
-            key-positions = <7 8>;
-        };
-
-        combo_semi {
-            bindings = <&kp SEMI>;
-            key-positions = <17 18>;
-        };
-
-        combo_dqt {
-            bindings = <&kp DQT>;
-            key-positions = <8 9>;
-        };
-
-        combo_sqt {
-            bindings = <&kp SQT>;
-            key-positions = <18 19>;
-        };
-
-        combo_pipe {
-            bindings = <&kp PIPE>;
-            key-positions = <19 9>;
-        };
-
-        combo_qmark {
-            bindings = <&kp QMARK>;
-            key-positions = <19 29>;
-        };
-    };
 
     keymap {
         compatible = "zmk,keymap";
