@@ -71,37 +71,37 @@
         };
 
         combo_plus {
-            bindings = <&kp PLUS>;
+            bindings = <&kp COLON>;
             key-positions = <6 7>;
             timeout-ms = <50>;
         };
 
         combo_equal {
-            bindings = <&kp EQUAL>;
+            bindings = <&kp SEMI>;
             key-positions = <16 17>;
             timeout-ms = <50>;
         };
 
         combo_colon {
-            bindings = <&kp COLON>;
+            bindings = <&kp DQT>;
             key-positions = <7 8>;
             timeout-ms = <50>;
         };
 
         combo_semi {
-            bindings = <&kp SEMI>;
+            bindings = <&kp SQT>;
             key-positions = <17 18>;
             timeout-ms = <50>;
         };
 
         combo_dqt {
-            bindings = <&kp DQT>;
+            bindings = <&kp PLUS>;
             key-positions = <8 9>;
             timeout-ms = <50>;
         };
 
         combo_sqt {
-            bindings = <&kp SQT>;
+            bindings = <&kp EQUAL>;
             key-positions = <18 19>;
             timeout-ms = <50>;
         };
@@ -295,9 +295,9 @@
 
         right_layer {
             bindings = <
-&kp TILDE  &kp EXCL   &kp AT     &kp POUND  &kp DLLR    &kp UNDER  &kp PLUS   &kp COLON  &kp DQT  &kp PIPE
-&kp GRAVE  &kp PRCNT  &kp CARET  &kp AMPS   &kp STAR    &kp MINUS  &kp EQUAL  &kp SEMI   &kp SQT  &kp BSLH
-&kp BSPC   &kp LBRC   &kp RBRC   &kp LPAR   &kp RPAR    &kp LBKT   &kp RBKT   &kp LT     &kp GT   &kp QMARK
+&kp TILDE  &kp EXCL   &kp AT     &kp POUND  &kp DLLR    &kp UNDER  &kp COLON      &kp DQT  &kp PLUS   &kp PIPE
+&kp GRAVE  &kp PRCNT  &kp CARET  &kp AMPS   &kp STAR    &kp MINUS  &kp SEMICOLON  &kp SQT  &kp EQUAL  &kp BSLH
+&kp BSPC   &kp LBRC   &kp RBRC   &kp LPAR   &kp RPAR    &kp LBKT   &kp RBKT       &kp LT   &kp GT     &kp QMARK
                                  &trans     &trans      &trans     &trans
             >;
         };
