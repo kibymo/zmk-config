@@ -38,7 +38,7 @@
             compatible = "zmk,behavior-caps-word";
             label = "CAPS_WORD";
             #binding-cells = <0>;
-            continue-list = <A B C D E F G H I J K L M N O P Q R S T U V W X Y Z UNDERSCORE BACKSPACE DELETE>;
+            continue-list = <UNDERSCORE BACKSPACE DELETE>;
         };
     };
 
@@ -61,7 +61,7 @@
 
         combo_tog3 {
             timeout-ms = <50>;
-            key-positions = <7 6 8>;
+            key-positions = <6 8>;
             bindings = <&tog 3>;
         };
 
