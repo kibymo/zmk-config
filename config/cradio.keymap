@@ -33,6 +33,13 @@
             display-name = "Toggle Layer On";
             toggle-mode = "on";
         };
+
+        caps_word: caps_word {
+            compatible = "zmk,behavior-caps-word";
+            label = "CAPS_WORD";
+            #binding-cells = <0>;
+            continue-list = <A B C D E F G H I J K L M N O P Q R S T U V W X Y Z UNDERSCORE BACKSPACE DELETE>;
+        };
     };
 
     //    conditional_layers {
@@ -295,10 +302,10 @@
 
         right_layer {
             bindings = <
-&kp TILDE  &kp EXCL   &kp AT     &kp POUND  &kp DLLR    &kp UNDER  &kp DOUBLE_QUOTES  &kp COLON      &kp PLUS   &kp PIPE
-&kp GRAVE  &kp PRCNT  &kp CARET  &kp AMPS   &kp STAR    &kp MINUS  &kp SQT            &kp SEMICOLON  &kp EQUAL  &kp BSLH
-&kp BSPC   &kp LBRC   &kp RBRC   &kp LPAR   &kp RPAR    &kp LBKT   &kp RBKT           &kp LT         &kp GT     &kp QMARK
-                                 &trans     &trans      &trans     &trans
+&kp TILDE   &kp EXCL   &kp AT     &kp POUND  &kp DLLR    &kp UNDER  &kp DOUBLE_QUOTES  &kp COLON      &kp PLUS   &kp PIPE
+&kp GRAVE   &kp PRCNT  &kp CARET  &kp AMPS   &kp STAR    &kp MINUS  &kp SQT            &kp SEMICOLON  &kp EQUAL  &kp BSLH
+&caps_word  &kp LBRC   &kp RBRC   &kp LPAR   &kp RPAR    &kp LBKT   &kp RBKT           &kp LT         &kp GT     &kp QMARK
+                                  &trans     &trans      &trans     &trans
             >;
         };
 
