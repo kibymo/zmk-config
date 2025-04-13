@@ -39,6 +39,7 @@
             label = "CAPS_WORD";
             #binding-cells = <0>;
             continue-list = <UNDERSCORE BACKSPACE DELETE>;
+            mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI)>;
         };
     };
 
