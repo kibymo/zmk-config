@@ -1,10 +1,10 @@
 // Copyright (c) 2022 The ZMK Contributors
 // SPDX-License-Identifier: MIT
 
+#include <behaviors/num_word.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <behaviors/num_word.dtsi>
 
 // Home row mods macro good
 
@@ -41,7 +41,6 @@
             #binding-cells = <0>;
             continue-list = <UNDERSCORE BACKSPACE DELETE>;
         };
-
     };
 
     //    conditional_layers {
@@ -315,10 +314,10 @@
 
         right_layer {
             bindings = <
-&kp TILDE  &kp EXCL   &kp AT     &kp POUND  &kp DLLR    &kp UNDER  &kp DOUBLE_QUOTES  &kp COLON      &kp PLUS   &kp PIPE
-&kp GRAVE  &kp PRCNT  &kp CARET  &kp AMPS   &kp STAR    &kp MINUS  &kp SQT            &kp SEMICOLON  &kp EQUAL  &kp BSLH
-&kp ENTER  &kp LBRC   &kp RBRC   &kp LPAR   &kp RPAR    &kp LBKT   &kp RBKT           &kp LT         &kp GT     &kp QMARK
-                                 &trans     &trans      &trans     &trans
+&kp TILDE   &kp EXCL   &kp AT     &kp POUND  &kp DLLR    &kp UNDER  &kp DOUBLE_QUOTES  &kp COLON      &kp PLUS   &kp PIPE
+&kp GRAVE   &kp PRCNT  &kp CARET  &kp AMPS   &kp STAR    &kp MINUS  &kp SQT            &kp SEMICOLON  &kp EQUAL  &kp BSLH
+&caps_word  &kp LBRC   &kp RBRC   &kp LPAR   &kp RPAR    &kp LBKT   &kp RBKT           &kp LT         &kp GT     &kp QMARK
+                                  &trans     &trans      &trans     &trans
             >;
         };
 
