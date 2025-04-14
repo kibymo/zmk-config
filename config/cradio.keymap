@@ -301,9 +301,10 @@
             timeout-ms = <50>;
         };
 
-        combo_tog2 {
-            bindings = <&tog_on 2>;
+        combo_nav_word3 {
+            bindings = <&nav_word 3>;
             key-positions = <32 33>;
+            timeout-ms = <50>;
         };
     };
 
