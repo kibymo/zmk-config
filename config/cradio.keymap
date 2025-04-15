@@ -292,7 +292,7 @@
 
         combo_n0 {
             bindings = <&kp N0>;
-            key-positions = <33 26>;
+            key-positions = <26 8>;
             timeout-ms = <50>;
         };
 
@@ -304,13 +304,19 @@
 
         combo_caps_word {
             bindings = <&caps_word>;
-            key-positions = <20 30>;
+            key-positions = <20 0>;
             timeout-ms = <50>;
         };
 
         combo_nav_word3 {
             bindings = <&nav_word 3>;
-            key-positions = <32 33>;
+            key-positions = <33 25>;
+            timeout-ms = <50>;
+        };
+
+        combo_num_word2 {
+            bindings = <&num_word>;
+            key-positions = <33 26>;
             timeout-ms = <50>;
         };
     };
@@ -329,10 +335,10 @@
 
         right_layer {
             bindings = <
-&kp TILDE   &kp EXCL   &kp AT     &kp POUND  &kp DLLR    &kp UNDER  &kp DOUBLE_QUOTES  &kp COLON      &kp PLUS   &kp PIPE
-&kp GRAVE   &kp PRCNT  &kp CARET  &kp AMPS   &kp STAR    &kp MINUS  &kp SQT            &kp SEMICOLON  &kp EQUAL  &kp BSLH
-&num_word 2  &kp LBRC   &kp RBRC   &kp LPAR   &kp RPAR    &kp LBKT   &kp RBKT           &kp LT         &kp GT     &kp QMARK
-                                  &trans     &trans      &trans     &trans
+&kp TILDE  &kp EXCL   &kp AT     &kp POUND  &kp DLLR    &kp UNDER  &kp DOUBLE_QUOTES  &kp COLON      &kp PLUS   &kp PIPE
+&kp GRAVE  &kp PRCNT  &kp CARET  &kp AMPS   &kp STAR    &kp MINUS  &kp SQT            &kp SEMICOLON  &kp EQUAL  &kp BSLH
+&kp TAB    &kp LBRC   &kp RBRC   &kp LPAR   &kp RPAR    &kp LBKT   &kp RBKT           &kp LT         &kp GT     &kp QMARK
+                                 &trans     &trans      &trans     &trans
             >;
         };
 
