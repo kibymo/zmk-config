@@ -315,7 +315,7 @@
         };
 
         combo_num_word2 {
-            bindings = <&num_word>;
+            bindings = <&num_word 2>;
             key-positions = <33 26>;
             timeout-ms = <50>;
         };
