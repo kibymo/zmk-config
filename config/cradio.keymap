@@ -307,6 +307,9 @@
             timeout-ms = <50>;
         };
     };
+    &caps_word { // Mods deactivate caps-word, requires PR #1451. [TODO: rebase]
+      /delete-property/ ignore-modifiers;
+    };
 
     keymap {
         compatible = "zmk,keymap";
