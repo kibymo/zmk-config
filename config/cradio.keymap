@@ -300,6 +300,12 @@
             key-positions = <15 6>;
             timeout-ms = <50>;
         };
+
+        combo_ctrl_spc {
+            bindings = <&kp LC(SPACE)>;
+            key-positions = <31 20>;
+            timeout-ms = <50>;
+        };
     };
 
     keymap {
