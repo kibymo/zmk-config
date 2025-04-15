@@ -300,12 +300,6 @@
             key-positions = <15 6>;
             timeout-ms = <50>;
         };
-
-        n0 {
-            bindings = <&kp N0>;
-            key-positions = <26 8>;
-            timeout-ms = <50>;
-        };
     };
 
     keymap {
