@@ -48,6 +48,13 @@
             continue-list = <LEFT DOWN UP RIGHT PG_DN PG_UP>;
             ignore-modifiers;
         };
+
+        num_word: num_word {
+            #binding-cells = <0>;
+            compatible = "zmk,behavior-num-word";
+            continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
+            ignore-numbers;
+        };
     };
 
     //    conditional_layers {
@@ -306,9 +313,6 @@
             key-positions = <32 33>;
             timeout-ms = <50>;
         };
-    };
-    &caps_word { // Mods deactivate caps-word, requires PR #1451. [TODO: rebase]
-      /delete-property/ ignore-modifiers;
     };
 
     keymap {
