@@ -306,6 +306,17 @@
             key-positions = <31 20>;
             timeout-ms = <50>;
         };
+
+        combo_tab {
+            bindings = <&kp TAB>;
+            key-positions = <20 30>;
+            timeout-ms = <50>;
+        };
+
+        combo_enter {
+            bindings = <&kp ENTER>;
+            key-positions = <32 29>;
+        };
     };
 
     keymap {
