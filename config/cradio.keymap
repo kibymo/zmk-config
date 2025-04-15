@@ -61,18 +61,6 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_enter {
-            timeout-ms = <50>;
-            key-positions = <27 28>;
-            bindings = <&kp ENTER>;
-        };
-
-        combo_tog3 {
-            timeout-ms = <50>;
-            key-positions = <6 8>;
-            bindings = <&tog 3>;
-        };
-
         combo_under {
             bindings = <&kp UNDER>;
             key-positions = <5 6>;
@@ -285,7 +273,7 @@
 
         combo_n0 {
             bindings = <&kp N0>;
-            key-positions = <26 8>;
+            key-positions = <26 33>;
             timeout-ms = <50>;
         };
 
@@ -309,7 +297,13 @@
 
         combo_num_word2 {
             bindings = <&num_word 2>;
-            key-positions = <5 15>;
+            key-positions = <15 6>;
+            timeout-ms = <50>;
+        };
+
+        n0 {
+            bindings = <&kp N0>;
+            key-positions = <26 8>;
             timeout-ms = <50>;
         };
     };
