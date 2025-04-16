@@ -351,8 +351,8 @@
 
         tri_layer {
             bindings = <
-&bt BT_SEL 0  &kp F1  &kp F2   &kp F3   &kp F4     &kp DOWN  &kp RIGHT  &kp PG_UP  &kp HOME   &kp PSCRN
-&bt BT_SEL 1  &kp F5  &kp F6   &kp F7   &kp F8     &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp CAPS
+&bt BT_SEL 0  &kp F1  &kp F2   &kp F3   &kp F4     &kp DOWN  &kp RIGHT  &kp PG_UP  &kp HOME   &trans
+&bt BT_SEL 1  &kp F5  &kp F6   &kp F7   &kp F8     &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans
 &bt BT_SEL 2  &kp F9  &kp F10  &kp F11  &kp F12    &kp UP    &kp LEFT   &kp PG_DN  &kp END    &kp DEL
                                &trans   &trans     &trans    &trans
             >;
