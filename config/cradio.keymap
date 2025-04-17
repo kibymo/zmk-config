@@ -93,7 +93,7 @@
 
         combo_semi {
             bindings = <&kp SEMICOLON>;
-            key-positions = <17 18>;
+            key-positions = <27 28>;
             timeout-ms = <50>;
         };
 
@@ -315,7 +315,7 @@
 
         combo_enter {
             bindings = <&kp ENTER>;
-            key-positions = <32 29>;
+            key-positions = <17 18>;
         };
     };
 
