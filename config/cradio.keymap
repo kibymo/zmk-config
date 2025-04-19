@@ -322,6 +322,11 @@
             bindings = <&bootloader>;
             key-positions = <12 13 14>;
         };
+
+        combo_ctrl_z {
+            bindings = <&kp LC(Z)>;
+            key-positions = <30 20>;
+        };
     };
 
     keymap {
