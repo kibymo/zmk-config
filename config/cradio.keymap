@@ -314,7 +314,7 @@
 
         combo_half_pgdwn {
             bindings = <&kp D>;
-            key-positions = <28 33>;
+            key-positions = <33 27>;
         };
 
         combo_bootloader {
