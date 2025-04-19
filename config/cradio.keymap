@@ -317,14 +317,9 @@
             key-positions = <28 33>;
         };
 
-        combo_bootloader1 {
+        combo_bootloader {
             bindings = <&bootloader>;
             key-positions = <12 13 14>;
-        };
-
-        combo_bootloader2 {
-            bindings = <&bootloader>;
-            key-positions = <15 16 17>;
         };
     };
 
@@ -360,10 +355,10 @@
 
         tri_layer {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp DOWN  &kp RIGHT  &kp UP       &kp HOME       &trans
-&none         &none         &none         &none         &none           &none     &kp LEFT   &kp DOWN     &kp RIGHT      &trans
-&none         &none         &none         &none         &none           &kp UP    &kp LEFT   &kp PAGE_UP  &kp PAGE_DOWN  &kp END
-                                          &trans        &trans          &trans    &trans
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp DOWN     &kp RIGHT  &kp UP         &kp HOME   &trans
+&none         &none         &none         &none         &none           &kp PAGE_UP  &kp LEFT   &kp DOWN       &kp RIGHT  &trans
+&none         &none         &none         &none         &none           &kp UP       &kp LEFT   &kp PAGE_DOWN  &kp END    &trans
+                                          &trans        &trans          &trans       &trans
             >;
         };
 
