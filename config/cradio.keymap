@@ -303,7 +303,7 @@
         };
 
         combo_ctrl_spc {
-            bindings = <&kp LC(SPACE)>;
+            bindings = <&kp LC(LS(SPACE))>;
             key-positions = <31 20>;
             timeout-ms = <50>;
         };
@@ -315,17 +315,7 @@
 
         combo_half_pgdwn {
             bindings = <&kp D>;
-            key-positions = <33 27>;
-        };
-
-        combo_bootloader {
-            bindings = <&bootloader>;
-            key-positions = <12 13 14>;
-        };
-
-        combo_ctrl_z {
-            bindings = <&kp LC(Z)>;
-            key-positions = <30 20>;
+            key-positions = <33 32>;
         };
     };
 
@@ -334,10 +324,10 @@
 
         default_layer {
             bindings = <
-&kp Q        &kp W           &kp F           &kp P      &kp B          &kp J        &kp L      &kp U           &kp Y            &kp BSPC
-&ht LSHFT A  &kp R           &kp S           &kp T      &kp G          &kp M        &kp N      &kp E           &kp I            &ht RSHFT O
-&ht LCTRL Z  &ht LEFT_ALT X  &ht LEFT_GUI C  &kp D      &kp V          &kp K        &kp H      &ht RGUI COMMA  &ht RALT PERIOD  &ht RCTRL SLASH
-                                             &lt 4 ESC  &lt 2 SPACE    &lt 1 ENTER  &lt 3 TAB
+&kp Q        &kp W        &kp F           &kp P      &kp B          &kp J        &kp L      &kp U           &kp Y             &kp BSPC
+&ht LALT A   &kp R        &kp S           &kp T      &kp G          &kp M        &kp N      &kp E           &kp I             &ht RALT O
+&ht LSHFT Z  &ht LCTRL X  &ht LEFT_GUI C  &kp D      &kp V          &kp K        &kp H      &ht RGUI COMMA  &ht RCTRL PERIOD  &ht RSHFT SLASH
+                                          &lt 4 ESC  &lt 2 SPACE    &lt 1 ENTER  &lt 3 TAB
             >;
         };
 
