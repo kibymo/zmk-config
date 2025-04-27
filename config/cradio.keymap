@@ -46,7 +46,7 @@
         nav_word: nav_word {
             compatible = "zmk,behavior-auto-layer";
             #binding-cells = <1>;
-            continue-list = <LEFT DOWN UP RIGHT PG_DN PG_UP>;
+            continue-list = <LEFT DOWN UP RIGHT PG_DN PG_UP D U>;
             ignore-modifiers;
         };
     };
@@ -355,10 +355,10 @@
 
         func_layer {
             bindings = <
-&trans  &kp F1  &kp F2   &kp F3   &kp F4     &trans  &trans  &trans  &trans  &trans
-&trans  &kp F5  &kp F6   &kp F7   &kp F8     &trans  &trans  &trans  &trans  &trans
-&trans  &kp F9  &kp F10  &kp F11  &kp F12    &trans  &trans  &trans  &trans  &trans
-                         &trans   &trans     &trans  &trans
+&none  &kp F1  &kp F2   &kp F3   &kp F4     &none  &none  &none  &none  &none
+&none  &kp F5  &kp F6   &kp F7   &kp F8     &none  &none  &none  &none  &none
+&none  &kp F9  &kp F10  &kp F11  &kp F12    &none  &none  &none  &none  &none
+                        &none    &none      &none  &none
             >;
         };
     };
