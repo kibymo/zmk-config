@@ -314,7 +314,7 @@
         };
 
         combo_ctrl_a {
-            bindings = <&kp ENTER>;
+            bindings = <&kp LC(A)>;
             key-positions = <10 22>;
         };
     };
