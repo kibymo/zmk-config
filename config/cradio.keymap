@@ -49,23 +49,6 @@
             continue-list = <LEFT DOWN UP RIGHT PG_DN PG_UP D U>;
             ignore-modifiers;
         };
-        caps_word_z: caps_word_z {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp Z>, <&kp Z>;
-            mods = <(MOD_LSFT)>;
-            layer-condition = "caps_word";
-        };
-        ht_z: ht_z {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <220>;
-            quick-tap-ms = <150>;
-            require-prior-idle-ms = <100>;
-            bindings = <&caps_word_z>, <&kp LCTL>; // tap: 大寫 Z, hold: 左Ctrl
-        };
-
     };
 
     //    conditional_layers {
@@ -343,7 +326,7 @@
             bindings = <
 &kp Q        &kp W  &kp F           &kp P        &kp B          &kp J        &kp L        &kp U           &kp Y       &kp BSPC
 &kp A        &kp R  &kp S           &ht LSHFT T  &kp G          &kp M        &ht RSHFT N  &kp E           &kp I       &kp O
-&ht_z  &kp X  &ht LEFT_GUI C  &kp D        &ht LALT V     &ht RALT K   &kp H        &ht RGUI COMMA  &kp PERIOD  &ht RCTRL SLASH
+&ht LCTRL Z  &kp X  &ht LEFT_GUI C  &kp D        &ht LALT V     &ht RALT K   &kp H        &ht RGUI COMMA  &kp PERIOD  &ht RCTRL SLASH
                                     &lt 4 ESC    &lt 2 SPACE    &lt 1 ENTER  &lt 3 TAB
             >;
         };
