@@ -54,8 +54,7 @@
             #binding-cells = <0>;
             bindings = <&kp Z>, <&kp Z>;
             mods = <(MOD_LSFT)>;
-            morph-ms = <0>;
-            layer-condition = "caps-word";
+            layer-condition = "caps_word";
         };
         ht_z: ht_z {
             compatible = "zmk,behavior-hold-tap";
