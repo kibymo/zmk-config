@@ -360,10 +360,10 @@
 
         func_layer {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4        &kp F5              &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&none   &none   &none   &kp LA(UP)    &kp LS(LA(UP))      &none   &none   &none   &none   &kp F11
-&none   &none   &none   &kp LA(DOWN)  &kp LS(LA(DOWN))    &none   &none   &none   &none   &kp F12
-                        &none         &none               &none   &none
+&kp F1                 &kp F2            &kp F3        &kp F4  &kp F5            &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
+&kp LS(LA(PAGE_UP))    &kp LS(LA(UP))    &kp LA(UP)    &none   &kp LG(LS(N4))    &none   &none   &none   &none   &kp F11
+&kp LS(LA(PAGE_DOWN))  &kp LS(LA(DOWN))  &kp LA(DOWN)  &none   &none             &none   &none   &none   &none   &kp F12
+                                                       &none   &none             &none   &none
             >;
         };
     };
