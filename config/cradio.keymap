@@ -8,10 +8,8 @@
 #include <dt-bindings/zmk/outputs.h>
 
 // Home row mods macro good
-
 //#define HRML(k1,k2,k3,k4) &ht LSHFT k1  &kp k2  &lt 2 k3  &lt 1 k4
 //#define HRMR(k1,k2,k3,k4) &lt 1 k1  &lt 2 k2  &kp k3  &ht RSHFT k4
-
 //#define HRML(k1,k2,k3,k4,k5) &ht LSHFT k1  &ht LCTRL k2  &ht LALT k3  &ht LGUI k4 &lt 2 k5
 //#define HRMR(k1,k2,k3,k4,k5) &lt 2 k1 &ht RGUI k2  &ht RALT k3  &ht RCTRL k4  &ht RSHFT k5
 //#define HRML3(k1,k2,k3) &ht LCTRL k1  &ht LALT k2  &ht LGUI k3
@@ -46,7 +44,7 @@
         nav_word: nav_word {
             compatible = "zmk,behavior-auto-layer";
             #binding-cells = <1>;
-            continue-list = <LEFT DOWN UP RIGHT PG_DN PG_UP D U>;
+            continue-list = <LEFT DOWN UP RIGHT PG_DN PG_UP R X D U>;
             ignore-modifiers;
         };
     };
@@ -352,8 +350,8 @@
         tri_layer {
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp DOWN     &kp RIGHT  &kp UP         &kp HOME   &trans
-&out OUT_USB  &out OUT_TOG  &out OUT_BLE  &none         &none           &kp PAGE_UP  &kp LEFT   &kp DOWN       &kp RIGHT  &kp U
-&none         &none         &none         &none         &none           &kp UP       &kp LEFT   &kp PAGE_DOWN  &kp END    &kp D
+&out OUT_USB  &kp R         &out OUT_BLE  &none         &none           &kp PAGE_UP  &kp LEFT   &kp DOWN       &kp RIGHT  &kp U
+&none         &kp X         &none         &none         &none           &kp UP       &kp LEFT   &kp PAGE_DOWN  &kp END    &kp D
                                           &trans        &trans          &trans       &trans
             >;
         };
