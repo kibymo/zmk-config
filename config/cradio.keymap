@@ -349,10 +349,10 @@
 
         tri_layer {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp DOWN   &kp RIGHT    &kp HOME  &kp END        &trans
-&out OUT_USB  &kp R         &out OUT_BLE  &none         &none           &kp LS(H)  &kp PAGE_UP  &kp UP    &kp PAGE_DOWN  &kp U
-&none         &kp X         &none         &none         &none           &kp UP     &kp LEFT     &kp DOWN  &kp RIGHT      &kp D
-                                          &trans        &trans          &trans     &trans
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp DOWN  &kp RIGHT    &kp HOME  &kp END        &trans
+&out OUT_USB  &kp R         &out OUT_BLE  &none         &none           &none     &kp PAGE_UP  &kp UP    &kp PAGE_DOWN  &kp U
+&none         &kp X         &none         &none         &none           &kp UP    &kp LEFT     &kp DOWN  &kp RIGHT      &kp D
+                                          &trans        &trans          &trans    &trans
             >;
         };
 
