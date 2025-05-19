@@ -284,7 +284,7 @@
 
         combo_caps_word {
             bindings = <&caps_word>;
-            key-positions = <20 0>;
+            key-positions = <6 7 8>;
             timeout-ms = <50>;
         };
 
@@ -296,7 +296,7 @@
 
         combo_num_word2 {
             bindings = <&num_word 2>;
-            key-positions = <15 6>;
+            key-positions = <16 17 18>;
             timeout-ms = <50>;
         };
 
@@ -332,7 +332,7 @@
         };
 
         combo_right {
-            bindings = <&kp LEFT>;
+            bindings = <&kp RIGHT>;
             key-positions = <33 28>;
         };
     };
