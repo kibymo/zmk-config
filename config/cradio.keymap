@@ -272,7 +272,7 @@
 
         combo_n0 {
             bindings = <&kp N0>;
-            key-positions = <26 33>;
+            key-positions = <33 32>;
             timeout-ms = <50>;
         };
 
@@ -290,7 +290,7 @@
 
         combo_nav_word3 {
             bindings = <&nav_word 3>;
-            key-positions = <25 33>;
+            key-positions = <26 28 27>;
             timeout-ms = <50>;
         };
 
@@ -314,6 +314,26 @@
         combo_ctrl_z {
             bindings = <&kp LC(Z)>;
             key-positions = <22 20>;
+        };
+
+        combo_up {
+            bindings = <&kp UP>;
+            key-positions = <33 25>;
+        };
+
+        combo_down {
+            bindings = <&kp DOWN>;
+            key-positions = <33 27>;
+        };
+
+        combo_left {
+            bindings = <&kp LEFT>;
+            key-positions = <33 26>;
+        };
+
+        combo_right {
+            bindings = <&kp LEFT>;
+            key-positions = <33 28>;
         };
     };
 
@@ -358,10 +378,10 @@
 
         func_layer {
             bindings = <
-&kp F1                 &kp F2            &kp F3        &kp F4  &kp F5            &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&kp LS(LA(PAGE_UP))    &kp LS(LA(UP))    &kp LA(UP)    &none   &kp LG(LS(N4))    &none   &none   &none   &none   &kp F11
-&kp LS(LA(PAGE_DOWN))  &kp LS(LA(DOWN))  &kp LA(DOWN)  &none   &none             &none   &none   &none   &none   &kp F12
-                                                       &none   &none             &none   &none
+&none  &kp F1  &kp F2   &kp F3   &kp F4     &none  &none     &none     &none      &none
+&none  &kp F5  &kp F6   &kp F7   &kp F8     &none  &none     &kp UP    &none      &none
+&none  &kp F9  &kp F10  &kp F11  &kp F12    &none  &kp LEFT  &kp DOWN  &kp RIGHT  &none
+                        &none    &none      &none  &none
             >;
         };
     };
