@@ -47,14 +47,7 @@
             continue-list = <LEFT DOWN UP RIGHT PG_DN PG_UP R X D U>;
             ignore-modifiers;
         };
-        macro_left: macro_left {
-            compatible = "zmk,behavior-macro";
-            label = "Macro LEFT";
-            #binding-cells = <0>;
-            bindings = <
-            &kp LEFT
-            >;
-        };
+
     };
 
     //    conditional_layers {
@@ -330,11 +323,8 @@
         };
 
         combo_left {
-            timeout-ms = <200>;
- //           bindings = <&kp LEFT>;
-            key-positions = <26 33>;
             bindings = <&macro_left>;
-
+            key-positions = <26 33>;
         };
 
         combo_right {
