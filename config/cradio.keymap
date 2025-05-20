@@ -306,9 +306,9 @@
             timeout-ms = <50>;
         };
 
-        combo_ctrl_z {
+        combo_ctrl_a {
             bindings = <&kp LC(A)>;
-            key-positions = <22 20>;
+            key-positions = <22 10>;
         };
 
         combo_up {
