@@ -335,6 +335,16 @@
             bindings = <&kp RIGHT>;
             key-positions = <33 28>;
         };
+
+        combo_esc {
+            bindings = <&kp ESC>;
+            key-positions = <11 0>;
+        };
+
+        combo_tab {
+            bindings = <&kp TAB>;
+            key-positions = <21 10>;
+        };
     };
 
     keymap {
@@ -342,10 +352,10 @@
 
         default_layer {
             bindings = <
-&kp Q        &kp W       &kp F  &kp P           &kp B          &kp J        &kp L        &kp U      &kp Y            &kp BSPC
-&kp A        &kp R       &kp S  &ht LSHFT T     &kp G          &kp M        &ht RSHFT N  &kp E      &kp I            &kp O
-&ht LCTRL Z  &ht LALT X  &kp C  &ht LEFT_GUI D  &kp V          &kp K        &ht RGUI H   &kp COMMA  &ht RALT PERIOD  &ht RCTRL SLASH
-                                &lt 4 ESC       &lt 2 SPACE    &lt 1 ENTER  &lt 3 TAB
+&kp Q        &kp W       &kp F           &kp P        &kp B          &kp J        &kp L        &kp U       &kp Y       &kp BSPC
+&kp A        &ht LALT R  &ht LEFT_GUI S  &ht LSHFT T  &kp G          &kp M        &ht RSHFT N  &ht RGUI E  &ht RALT I  &kp O
+&ht LCTRL Z  &kp X       &kp C           &kp D        &kp V          &kp K        &kp H        &kp COMMA   &kp DOT     &ht RCTRL SLASH
+                                         &lt 4 ESC    &lt 2 SPACE    &lt 1 ENTER  &lt 3 TAB
             >;
         };
 
