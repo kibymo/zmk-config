@@ -50,6 +50,7 @@
         macro_left: macro_left {
             compatible = "zmk,behavior-macro";
             label = "Macro LEFT";
+            #binding-cells = <0>;
             bindings = <
             &kp LEFT
             >;
