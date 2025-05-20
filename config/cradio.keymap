@@ -272,7 +272,7 @@
 
         combo_n0 {
             bindings = <&kp N0>;
-            key-positions = <33 26>;
+            key-positions = <33 32>;
             timeout-ms = <50>;
         };
 
