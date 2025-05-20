@@ -272,7 +272,7 @@
 
         combo_n0 {
             bindings = <&kp N0>;
-            key-positions = <33 26>;
+            key-positions = <33 32>;
             timeout-ms = <50>;
         };
 
@@ -306,11 +306,6 @@
             timeout-ms = <50>;
         };
 
-        combo_enter {
-            bindings = <&kp ENTER>;
-            key-positions = <27 28>;
-        };
-
         combo_ctrl_z {
             bindings = <&kp LC(Z)>;
             key-positions = <22 20>;
@@ -318,22 +313,22 @@
 
         combo_up {
             bindings = <&kp UP>;
-            key-positions = <25 15>;
+            key-positions = <33 25>;
         };
 
         combo_down {
             bindings = <&kp DOWN>;
-            key-positions = <33 25>;
+            key-positions = <33 27>;
         };
 
         combo_left {
             bindings = <&kp LEFT>;
-            key-positions = <25 32>;
+            key-positions = <26 33>;
         };
 
         combo_right {
             bindings = <&kp RIGHT>;
-            key-positions = <33 27>;
+            key-positions = <33 28>;
         };
 
         combo_esc {
