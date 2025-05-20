@@ -323,7 +323,7 @@
         };
 
         combo_left {
-            bindings = <&macro_left>;
+            bindings = <&kp LEFT>;
             key-positions = <26 33>;
         };
 
