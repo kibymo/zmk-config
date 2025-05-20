@@ -318,7 +318,7 @@
 
         combo_down {
             bindings = <&kp DOWN>;
-            key-positions = <5 15>;
+            key-positions = <33 27>;
         };
 
         combo_left {
@@ -387,6 +387,15 @@
 &none  &kp F5  &kp F6   &kp F7   &kp F8     &none  &none     &kp UP    &none      &none
 &none  &kp F9  &kp F10  &kp F11  &kp F12    &none  &kp LEFT  &kp DOWN  &kp RIGHT  &none
                         &none    &none      &none  &none
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans    &trans  &trans
             >;
         };
     };
