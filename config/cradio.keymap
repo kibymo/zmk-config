@@ -318,7 +318,7 @@
 
         combo_down {
             bindings = <&kp DOWN>;
-            key-positions = <33 27>;
+            key-positions = <33 26>;
         };
 
         combo_left {
@@ -328,7 +328,7 @@
 
         combo_right {
             bindings = <&kp RIGHT>;
-            key-positions = <33 28>;
+            key-positions = <27 28>;
         };
 
         combo_esc {
