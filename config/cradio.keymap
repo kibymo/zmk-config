@@ -47,7 +47,6 @@
             continue-list = <LEFT DOWN UP RIGHT PG_DN PG_UP R X D U>;
             ignore-modifiers;
         };
-
     };
 
     //    conditional_layers {
@@ -273,7 +272,7 @@
 
         combo_n0 {
             bindings = <&kp N0>;
-            key-positions = <33 32>;
+            key-positions = <33 26>;
             timeout-ms = <50>;
         };
 
@@ -324,7 +323,7 @@
 
         combo_left {
             bindings = <&kp LEFT>;
-            key-positions = <26 33>;
+            key-positions = <25 15>;
         };
 
         combo_right {
@@ -341,7 +340,6 @@
             bindings = <&kp TAB>;
             key-positions = <21 10>;
         };
-    
     };
 
     keymap {
