@@ -47,6 +47,13 @@
             continue-list = <LEFT DOWN UP RIGHT PG_DN PG_UP R X D U>;
             ignore-modifiers;
         };
+        macro_left: macro_left {
+            compatible = "zmk,behavior-macro";
+            label = "Macro LEFT";
+            bindings = <
+            &kp LEFT
+            >;
+        };
     };
 
     //    conditional_layers {
@@ -340,6 +347,12 @@
             bindings = <&kp TAB>;
             key-positions = <21 10>;
         };
+        tab_h_combo {
+            timeout-ms = <200>;
+            key-positions = <&kp_tab &kp_h>;
+            bindings = <&macro_left>;
+        };
+    
     };
 
     keymap {
