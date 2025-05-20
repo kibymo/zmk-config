@@ -272,7 +272,7 @@
 
         combo_n0 {
             bindings = <&kp N0>;
-            key-positions = <33 32>;
+            key-positions = <33 26>;
             timeout-ms = <50>;
         };
 
@@ -318,22 +318,22 @@
 
         combo_up {
             bindings = <&kp UP>;
-            key-positions = <33 25>;
+            key-positions = <25 15>;
         };
 
         combo_down {
             bindings = <&kp DOWN>;
-            key-positions = <33 27>;
+            key-positions = <33 25>;
         };
 
         combo_left {
             bindings = <&kp LEFT>;
-            key-positions = <33 26>;
+            key-positions = <25 32>;
         };
 
         combo_right {
             bindings = <&kp RIGHT>;
-            key-positions = <33 28>;
+            key-positions = <33 27>;
         };
 
         combo_esc {
