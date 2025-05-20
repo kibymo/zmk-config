@@ -329,8 +329,11 @@
         };
 
         combo_left {
-            bindings = <&kp LEFT>;
+            timeout-ms = <200>;
+ //           bindings = <&kp LEFT>;
             key-positions = <26 33>;
+            bindings = <&macro_left>;
+
         };
 
         combo_right {
@@ -346,11 +349,6 @@
         combo_tab {
             bindings = <&kp TAB>;
             key-positions = <21 10>;
-        };
-        tab_h_combo {
-            timeout-ms = <200>;
-            key-positions = <&kp_tab &kp_h>;
-            bindings = <&macro_left>;
         };
     
     };
