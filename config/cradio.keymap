@@ -291,13 +291,13 @@
         };
 
         combo_nav_word {
-            bindings = <&nav_word>;
+            bindings = <&nav_word 3>;
             key-positions = <5 25>;
             timeout-ms = <50>;
         };
 
         combo_num_word {
-            bindings = <&num_word>;
+            bindings = <&num_word 2>;
             key-positions = <15 5>;
             timeout-ms = <50>;
         };
