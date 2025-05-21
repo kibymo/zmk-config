@@ -288,14 +288,14 @@
             timeout-ms = <50>;
         };
 
-        combo_nav_word3 {
-            bindings = <&nav_word 3>;
+        combo_nav_word {
+            bindings = <&nav_word>;
             key-positions = <26 28>;
             timeout-ms = <50>;
         };
 
-        combo_num_word2 {
-            bindings = <&num_word 2>;
+        combo_num_word {
+            bindings = <&num_word>;
             key-positions = <16 18>;
             timeout-ms = <50>;
         };
