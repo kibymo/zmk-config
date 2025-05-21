@@ -274,7 +274,7 @@
 
         combo_n0 {
             bindings = <&kp N0>;
-            key-positions = <33 26>;
+            key-positions = <15 25>;
             timeout-ms = <50>;
         };
 
@@ -326,7 +326,7 @@
 
         combo_left {
             bindings = <&kp LEFT>;
-            key-positions = <25 33>;
+            key-positions = <33 26>;
         };
 
         combo_right {
