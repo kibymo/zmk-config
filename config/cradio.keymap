@@ -290,14 +290,14 @@
             timeout-ms = <50>;
         };
 
-        combo_nav_word {
-            bindings = <&nav_word>;
+        combo_nav_word_layer3 {
+            bindings = <&nav_word 3>;
             key-positions = <26 28>;
             timeout-ms = <50>;
         };
 
-        combo_num_word {
-            bindings = <&num_word>;
+        combo_num_word_layer2 {
+            bindings = <&num_word 2>;
             key-positions = <16 18>;
             timeout-ms = <50>;
         };
