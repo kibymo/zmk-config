@@ -288,7 +288,6 @@
             bindings = <&caps_word>;
             key-positions = <0 20>;
             timeout-ms = <50>;
-            layers = <0>;
         };
 
         combo_nav_word_layer3 {
@@ -331,7 +330,7 @@
 
         combo_right {
             bindings = <&kp RIGHT>;
-            key-positions = <27 28>;
+            key-positions = <28 33>;
         };
 
         combo_esc {
@@ -341,7 +340,7 @@
 
         combo_tab {
             bindings = <&kp TAB>;
-            key-positions = <21 10>;
+            key-positions = <21 0>;
         };
     };
 
