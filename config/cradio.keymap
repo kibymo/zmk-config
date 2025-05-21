@@ -286,19 +286,19 @@
 
         combo_caps_word {
             bindings = <&caps_word>;
-            key-positions = <6 8>;
+            key-positions = <0 20>;
             timeout-ms = <50>;
         };
 
-        combo_nav_word_layer3 {
-            bindings = <&nav_word 3>;
-            key-positions = <26 28>;
+        combo_nav_word {
+            bindings = <&nav_word>;
+            key-positions = <5 25>;
             timeout-ms = <50>;
         };
 
-        combo_num_word_layer2 {
-            bindings = <&num_word 2>;
-            key-positions = <16 18>;
+        combo_num_word {
+            bindings = <&num_word>;
+            key-positions = <15 5>;
             timeout-ms = <50>;
         };
 
