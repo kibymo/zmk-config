@@ -36,11 +36,16 @@
 
         caps_word: caps_word {
             compatible = "zmk,behavior-caps-word";
-            label = "CAPS_WORD";
+            //label = "CAPS_WORD";
             #binding-cells = <0>;
             continue-list = <UNDERSCORE BACKSPACE DELETE>;
         };
-
+        num_word: num_word {
+            compatible = "zmk,behavior-auto-layer";
+            #binding-cells = <1>;
+            continue-list = <BACKSPACE DELETE DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
+            ignore-numbers;
+        };
         nav_word: nav_word {
             compatible = "zmk,behavior-auto-layer";
             #binding-cells = <1>;
