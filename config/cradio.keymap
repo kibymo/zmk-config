@@ -326,7 +326,7 @@
 
         combo_left {
             bindings = <&kp LEFT>;
-            key-positions = <25 15>;
+            key-positions = <25 33>;
         };
 
         combo_right {
