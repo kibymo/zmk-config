@@ -38,14 +38,14 @@
 
         num_word: num_word {
             compatible = "zmk,behavior-auto-layer";
-            #binding-cells = <1>;
+            #binding-cells = <0>;
             continue-list = <BACKSPACE DELETE DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
             ignore-numbers;
         };
 
         nav_word: nav_word {
             compatible = "zmk,behavior-auto-layer";
-            #binding-cells = <1>;
+            #binding-cells = <0>;
             continue-list = <LEFT DOWN UP RIGHT PG_DN PG_UP R X D U>;
             ignore-modifiers;
         };
