@@ -340,7 +340,7 @@
 
         combo_tab {
             bindings = <&kp TAB>;
-            key-positions = <0 22>;
+            key-positions = <0 12>;
         };
     };
 
