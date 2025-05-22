@@ -308,8 +308,8 @@
             timeout-ms = <50>;
         };
 
-        combo_ctrl_a {
-            bindings = <&kp LC(A)>;
+        combo_ctrl_z {
+            bindings = <&kp LC(Z)>;
             key-positions = <22 10>;
         };
 
@@ -335,12 +335,12 @@
 
         combo_esc {
             bindings = <&kp ESC>;
-            key-positions = <11 0>;
+            key-positions = <0 11>;
         };
 
         combo_tab {
             bindings = <&kp TAB>;
-            key-positions = <21 0>;
+            key-positions = <10 21>;
         };
     };
 
@@ -349,10 +349,10 @@
 
         default_layer {
             bindings = <
-&kp Q        &kp W       &kp F           &kp P        &kp B          &kp J        &kp L        &kp U       &kp Y       &kp BSPC
-&ht LCTRL A  &ht LALT R  &ht LEFT_GUI S  &ht LSHFT T  &kp G          &kp M        &ht RSHFT N  &ht RGUI E  &ht RALT I  &ht RCTRL O
-&kp Z        &kp X       &kp C           &kp D        &kp V          &kp K        &kp H        &kp COMMA   &kp DOT     &kp SLASH
-                                         &lt 4 ESC    &lt 2 SPACE    &lt 1 ENTER  &lt 3 TAB
+&kp Q        &kp W       &kp F  &kp P        &kp B          &kp J        &kp L        &kp U      &kp Y            &kp BSPC
+&kp A        &kp R       &kp S  &ht LSHFT T  &kp G          &kp M        &ht RSHFT N  &kp E      &kp I            &kp O
+&ht LCTRL Z  &ht LALT X  &kp C  &ht LGUI D   &kp V          &kp K        &ht RGUI H   &kp COMMA  &ht RALT PERIOD  &ht LCTRL SLASH
+                                &lt 4 ESC    &lt 2 SPACE    &lt 1 ENTER  &lt 3 TAB
             >;
         };
 
@@ -360,7 +360,7 @@
             bindings = <
 &kp TILDE  &kp EXCL   &kp AT     &kp POUND  &kp DLLR    &kp UNDER  &kp COLON  &kp DQT  &kp PLUS   &kp PIPE
 &kp GRAVE  &kp PRCNT  &kp CARET  &kp AMPS   &kp STAR    &kp MINUS  &kp SEMI   &kp SQT  &kp EQUAL  &kp BSLH
-&none      &kp LPAR   &kp RPAR   &kp LBRC   &kp RBRC    &kp LBKT   &kp RBKT   &kp LT   &kp GT     &kp QMARK
+&kp LC(Z)  &kp LPAR   &kp RPAR   &kp LBRC   &kp RBRC    &kp LBKT   &kp RBKT   &kp LT   &kp GT     &kp QMARK
                                  &trans     &trans      &trans     &trans
             >;
         };
