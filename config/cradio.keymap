@@ -340,7 +340,21 @@
 
         combo_tab {
             bindings = <&kp TAB>;
-            key-positions = <0 12>;
+            key-positions = <21 10>;
+        };
+
+        combo_wq {
+            bindings = <&macro_wq>;
+            key-positions = <0 2>;
+        };
+    };
+
+    macros {
+        macro_wq: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESC &kp COLON &kp W &kp Q &kp EXCL>;
+            label = "NEW_MACRO";
         };
     };
 
