@@ -335,17 +335,17 @@
 
         combo_esc {
             bindings = <&kp ESC>;
-            key-positions = <0 11>;
+            key-positions = <21 10>;
         };
 
         combo_tab {
             bindings = <&kp TAB>;
-            key-positions = <21 10>;
+            key-positions = <0 11>;
         };
 
         combo_wq {
             bindings = <&macro_wq>;
-            key-positions = <0 2>;
+            key-positions = <0 12>;
         };
     };
 
