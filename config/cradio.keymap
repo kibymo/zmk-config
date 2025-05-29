@@ -343,9 +343,14 @@
             key-positions = <12 1>;
         };
 
-        combo_tab2 {
-            bindings = <&kp A>;
+        combo_tabr {
+            bindings = <&kp TAB>;
             key-positions = <17 8>;
+        };
+
+        tabtw {
+            bindings = <&kp TAB>;
+            key-positions = <18 9>;
         };
     };
 
