@@ -298,7 +298,7 @@
 
         combo_num_word_layer2 {
             bindings = <&num_word 2>;
-            key-positions = <6 8>;
+            key-positions = <6 15>;
             timeout-ms = <50>;
         };
 
