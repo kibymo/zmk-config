@@ -354,12 +354,12 @@
         };
 
         t2 {
-            bindings = <&kp E>;
+            bindings = <&kp LS(LA(LC(UP_ARROW)))>;
             key-positions = <11 13>;
         };
 
         t3 {
-            bindings = <&kp D>;
+            bindings = <&kp LS(LA(LC(DOWN)))>;
             key-positions = <21 23>;
         };
     };
