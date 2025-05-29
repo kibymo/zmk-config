@@ -345,22 +345,22 @@
 
         combo_tabr {
             bindings = <&kp TAB>;
-            key-positions = <17 8>;
-        };
-
-        tabtw {
-            bindings = <&kp TAB>;
-            key-positions = <18 9>;
-        };
-
-        t1 {
-            bindings = <&kp TAB>;
-            key-positions = <19 28>;
+            key-positions = <5 15>;
         };
 
         t2 {
-            bindings = <&kp TAB>;
-            key-positions = <5 15>;
+            bindings = <&kp F>;
+            key-positions = <18 9>;
+        };
+
+        t3 {
+            bindings = <&kp E>;
+            key-positions = <28 19>;
+        };
+
+        t4 {
+            bindings = <&kp D>;
+            key-positions = <8 17>;
         };
     };
 
