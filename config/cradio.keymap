@@ -298,7 +298,7 @@
 
         combo_num_word_layer2 {
             bindings = <&num_word 2>;
-            key-positions = <6 15>;
+            key-positions = <16 18>;
             timeout-ms = <50>;
         };
 
@@ -348,19 +348,28 @@
             key-positions = <17 8>;
         };
 
+        t1 {
+            bindings = <&macro_grep>;
+            key-positions = <1 3>;
+        };
+
         t2 {
-            bindings = <&kp F>;
+            bindings = <&kp E>;
             key-positions = <11 13>;
         };
 
         t3 {
-            bindings = <&kp E>;
-            key-positions = <1 3>;
-        };
-
-        t4 {
             bindings = <&kp D>;
             key-positions = <21 23>;
+        };
+    };
+
+    macros {
+        macro_grep: macro_grep {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp PIPE &kp G &kp R &kp E &kp P &kp SPACE>;
+            label = "MACRO_GREP";
         };
     };
 
