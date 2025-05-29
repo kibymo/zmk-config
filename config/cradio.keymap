@@ -350,7 +350,7 @@
 
         t2 {
             bindings = <&kp F>;
-            key-positions = <16 18>;
+            key-positions = <11 13>;
         };
 
         t3 {
@@ -360,7 +360,7 @@
 
         t4 {
             bindings = <&kp D>;
-            key-positions = <26 28>;
+            key-positions = <21 23>;
         };
     };
 
