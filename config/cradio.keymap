@@ -286,7 +286,7 @@
 
         combo_caps_word {
             bindings = <&caps_word>;
-            key-positions = <0 20>;
+            key-positions = <16 18>;
             timeout-ms = <50>;
         };
 
@@ -298,7 +298,7 @@
 
         combo_num_word_layer2 {
             bindings = <&num_word 2>;
-            key-positions = <6 15>;
+            key-positions = <6 8>;
             timeout-ms = <50>;
         };
 
