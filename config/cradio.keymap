@@ -337,21 +337,6 @@
             bindings = <&kp ESC>;
             key-positions = <0 11>;
         };
-
-        combo_tab {
-            bindings = <&kp TAB>;
-            key-positions = <10 21>;
-        };
-
-        combo_enter {
-            bindings = <&kp ENTER>;
-            key-positions = <18 9>;
-        };
-
-        combo_tab2 {
-            bindings = <&kp TAB>;
-            key-positions = <28 19>;
-        };
     };
 
     keymap {
@@ -359,10 +344,10 @@
 
         default_layer {
             bindings = <
-&kp Q        &kp W       &kp F  &kp P           &kp B          &kp J        &kp L        &kp U      &kp Y            &kp BSPC
-&kp A        &kp R       &kp S  &ht LSHFT T     &kp G          &kp M        &ht RSHFT N  &kp E      &kp I            &kp O
-&ht LCTRL Z  &ht LALT X  &kp C  &ht LEFT_GUI D  &kp V          &kp K        &ht RGUI H   &kp COMMA  &ht RALT PERIOD  &ht LCTRL SLASH
-                                &lt 4 ESC       &lt 2 SPACE    &lt 1 SPACE  &lt 3 TAB
+&kp Q        &kp W       &kp F  &kp P           &kp B          &kp J            &kp L        &kp U      &kp Y            &kp ENTER
+&kp A        &kp R       &kp S  &ht LSHFT T     &kp G          &kp M            &ht RSHFT N  &kp E      &kp I            &kp O
+&ht LCTRL Z  &ht LALT X  &kp C  &ht LEFT_GUI D  &kp V          &kp K            &ht RGUI H   &kp COMMA  &ht RALT PERIOD  &ht LCTRL SLASH
+                                &lt 4 ESC       &lt 2 SPACE    &lt 1 BACKSPACE  &lt 3 TAB
             >;
         };
 
@@ -377,10 +362,10 @@
 
         left_layer {
             bindings = <
-&none  &kp N1  &kp N2  &kp N3      &kp N4    &none  &kp N7  &kp N8  &kp N9  &trans
-&none  &kp N5  &kp N6  &kp N7      &kp N8    &none  &kp N4  &kp N5  &kp N6  &none
-&none  &kp N9  &kp N0  &kp PERIOD  &none     &none  &kp N1  &kp N2  &kp N3  &kp DOT
-                       &none       &none     &none  &kp N0
+&trans  &kp N1  &kp N2  &kp N3      &kp N4    &trans  &kp N7  &kp N8  &kp N9  &trans
+&trans  &kp N5  &kp N6  &kp N7      &kp N8    &trans  &kp N4  &kp N5  &kp N6  &trans
+&trans  &kp N9  &kp N0  &kp PERIOD  &trans    &trans  &kp N1  &kp N2  &kp N3  &kp DOT
+                        &trans      &trans    &trans  &kp N0
             >;
         };
 
