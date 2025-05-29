@@ -148,49 +148,49 @@
 
         combo_excl {
             bindings = <&kp EXCL>;
-            key-positions = <1 11>;
+            key-positions = <1 0>;
             timeout-ms = <50>;
         };
 
         combo_percent {
             bindings = <&kp PERCENT>;
-            key-positions = <11 21>;
+            key-positions = <11 10>;
             timeout-ms = <50>;
         };
 
         combo_at {
             bindings = <&kp AT>;
-            key-positions = <2 12>;
+            key-positions = <2 1>;
             timeout-ms = <50>;
         };
 
         combo_caret {
             bindings = <&kp CARET>;
-            key-positions = <12 22>;
+            key-positions = <12 11>;
             timeout-ms = <50>;
         };
 
         combo_hash {
             bindings = <&kp HASH>;
-            key-positions = <3 13>;
+            key-positions = <3 2>;
             timeout-ms = <50>;
         };
 
         combo_amps {
             bindings = <&kp AMPS>;
-            key-positions = <13 23>;
+            key-positions = <13 12>;
             timeout-ms = <50>;
         };
 
         combo_dllr {
             bindings = <&kp DLLR>;
-            key-positions = <4 14>;
+            key-positions = <4 3>;
             timeout-ms = <50>;
         };
 
         combo_astrk {
             bindings = <&kp ASTRK>;
-            key-positions = <14 24>;
+            key-positions = <14 13>;
             timeout-ms = <50>;
         };
 
@@ -286,19 +286,19 @@
 
         combo_caps_word {
             bindings = <&caps_word>;
-            key-positions = <0 20>;
+            key-positions = <16 18>;
             timeout-ms = <50>;
         };
 
         combo_nav_word_layer3 {
             bindings = <&nav_word 3>;
-            key-positions = <5 25>;
+            key-positions = <25 27>;
             timeout-ms = <50>;
         };
 
         combo_num_word_layer2 {
             bindings = <&num_word 2>;
-            key-positions = <5 15>;
+            key-positions = <6 8>;
             timeout-ms = <50>;
         };
 
@@ -340,21 +340,17 @@
 
         combo_tab {
             bindings = <&kp TAB>;
-            key-positions = <11 10>;
+            key-positions = <10 21>;
         };
 
         combo_enter {
             bindings = <&kp ENTER>;
             key-positions = <18 9>;
         };
-    };
 
-    macros {
-        macro_wq: new_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp ESC &kp COLON &kp W &kp Q &kp EXCL>;
-            label = "NEW_MACRO";
+        combo_tab2 {
+            bindings = <&kp TAB>;
+            key-positions = <28 19>;
         };
     };
 
@@ -366,7 +362,7 @@
 &kp Q        &kp W       &kp F  &kp P           &kp B          &kp J        &kp L        &kp U      &kp Y            &kp BSPC
 &kp A        &kp R       &kp S  &ht LSHFT T     &kp G          &kp M        &ht RSHFT N  &kp E      &kp I            &kp O
 &ht LCTRL Z  &ht LALT X  &kp C  &ht LEFT_GUI D  &kp V          &kp K        &ht RGUI H   &kp COMMA  &ht RALT PERIOD  &ht LCTRL SLASH
-                                &lt 4 ESC       &lt 2 SPACE    &lt 1 ENTER  &lt 3 TAB
+                                &lt 4 ESC       &lt 2 SPACE    &lt 1 SPACE  &lt 3 TAB
             >;
         };
 
@@ -374,17 +370,17 @@
             bindings = <
 &kp TILDE  &kp EXCL   &kp AT     &kp POUND  &kp DLLR    &kp UNDER  &kp COLON  &kp DQT  &kp PLUS   &kp PIPE
 &kp GRAVE  &kp PRCNT  &kp CARET  &kp AMPS   &kp STAR    &kp MINUS  &kp SEMI   &kp SQT  &kp EQUAL  &kp BSLH
-&kp LC(Z)  &kp LPAR   &kp RPAR   &kp LBRC   &kp RBRC    &kp LBKT   &kp RBKT   &kp LT   &kp GT     &kp QMARK
+&trans     &kp LPAR   &kp RPAR   &kp LBRC   &kp RBRC    &kp LBKT   &kp RBKT   &kp LT   &kp GT     &kp QMARK
                                  &trans     &trans      &trans     &trans
             >;
         };
 
         left_layer {
             bindings = <
-&none  &kp N1  &kp N2  &kp N3      &kp N4    &none   &kp N7  &kp N8  &kp N9  &trans
-&none  &kp N5  &kp N6  &kp N7      &kp N8    &none   &kp N4  &kp N5  &kp N6  &trans
-&none  &kp N9  &kp N0  &kp PERIOD  &none     &none   &kp N1  &kp N2  &kp N3  &kp DOT
-                       &trans      &trans    &trans  &kp N0
+&none  &kp N1  &kp N2  &kp N3      &kp N4    &none  &kp N7  &kp N8  &kp N9  &trans
+&none  &kp N5  &kp N6  &kp N7      &kp N8    &none  &kp N4  &kp N5  &kp N6  &none
+&none  &kp N9  &kp N0  &kp PERIOD  &none     &none  &kp N1  &kp N2  &kp N3  &kp DOT
+                       &none       &none     &none  &kp N0
             >;
         };
 
