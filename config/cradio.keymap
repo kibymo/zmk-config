@@ -343,8 +343,8 @@
             key-positions = <12 1>;
         };
 
-        combo_tabr {
-            bindings = <&kp TAB>;
+        combo_enter {
+            bindings = <&kp ENTER>;
             key-positions = <17 8>;
         };
 
