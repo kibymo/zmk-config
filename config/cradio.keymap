@@ -335,7 +335,7 @@
 
         combo_esc {
             bindings = <&kp ESC>;
-            key-positions = <1 0>;
+            key-positions = <0 11>;
         };
 
         combo_tab {
@@ -343,9 +343,9 @@
             key-positions = <11 10>;
         };
 
-        combo_wq {
-            bindings = <&macro_wq>;
-            key-positions = <0 12>;
+        combo_enter {
+            bindings = <&kp ENTER>;
+            key-positions = <18 9>;
         };
     };
 
