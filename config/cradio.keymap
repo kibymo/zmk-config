@@ -25,6 +25,7 @@
             quick_tap_ms = <180>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
+
             hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 32 33>;
         };
 
@@ -36,6 +37,7 @@
             quick_tap_ms = <180>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
+
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31>;
         };
 
@@ -401,8 +403,8 @@
         default_layer {
             bindings = <
 &kp Q        &kp W       &kp F  &kp P           &kp B          &kp J        &kp L        &kp U      &kp Y            &kp BACKSPACE
-&kp A        &kp R       &kp S  &ht LSHFT T     &kp G          &kp M        &ht RSHFT N  &kp E      &kp I            &kp O
-&ht LCTRL Z  &ht LALT X  &kp C  &ht LEFT_GUI D  &kp V          &kp K        &ht RGUI H   &kp COMMA  &ht RALT PERIOD  &ht LCTRL SLASH
+&kp A        &kp R       &kp S  &lm LSHFT T     &kp G          &kp M        &rm RSHFT N  &kp E      &kp I            &kp O
+&lm LCTRL Z  &lm LALT X  &kp C  &lm LEFT_GUI D  &kp V          &kp K        &rm RGUI H   &kp COMMA  &rm RALT PERIOD  &rm LCTRL SLASH
                                 &lt 4 ESC       &lt 2 SPACE    &lt 1 ENTER  &lt 3 TAB
             >;
         };
