@@ -7,14 +7,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
-// Home row mods macro good
-//#define HRML(k1,k2,k3,k4) &ht LSHFT k1  &kp k2  &lt 2 k3  &lt 1 k4
-//#define HRMR(k1,k2,k3,k4) &lt 1 k1  &lt 2 k2  &kp k3  &ht RSHFT k4
-//#define HRML(k1,k2,k3,k4,k5) &ht LSHFT k1  &ht LCTRL k2  &ht LALT k3  &ht LGUI k4 &lt 2 k5
-//#define HRMR(k1,k2,k3,k4,k5) &lt 2 k1 &ht RGUI k2  &ht RALT k3  &ht RCTRL k4  &ht RSHFT k5
-//#define HRML3(k1,k2,k3) &ht LCTRL k1  &ht LALT k2  &ht LGUI k3
-//#define HRMR3(k1,k2,k3) &ht RGUI k1  &ht RALT k2  &ht RCTRL k3
-
 / {
     behaviors {
         hml: home_row_mod_left {
@@ -41,16 +33,6 @@
 
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31>;
             hold-trigger-on-release;
-        };
-
-        ht: hold_tap {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <220>;
-            quick-tap-ms = <150>;
-            require-prior-idle-ms = <100>;
-            bindings = <&kp>, <&kp>;
         };
 
         caps_word: caps_word {
@@ -401,7 +383,7 @@
         macro_ckcu: macro_ckcu {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp K &kp LCTRL &kp U>;
+            bindings = <&kp LC(K) &kp LC(U)>;
             label = "MACRO_CKCU";
         };
     };
