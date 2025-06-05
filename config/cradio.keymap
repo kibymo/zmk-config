@@ -348,12 +348,12 @@
 
         combo_tab {
             bindings = <&kp TAB>;
-            key-positions = <12 1>;
+            key-positions = <10 13>;
         };
 
         combo_enter {
             bindings = <&kp ENTER>;
-            key-positions = <17 8>;
+            key-positions = <16 19>;
         };
 
         t1 {
@@ -369,6 +369,11 @@
         t3 {
             bindings = <&kp LS(LA(LC(DOWN)))>;
             key-positions = <21 23>;
+        };
+
+        t4 {
+            bindings = <&macro_grep>;
+            key-positions = <18 9>;
         };
     };
 
