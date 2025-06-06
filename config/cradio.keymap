@@ -318,22 +318,22 @@
 
         combo_up {
             bindings = <&kp UP>;
-            key-positions = <7 17>;
+            key-positions = <33 25>;
         };
 
         combo_down {
             bindings = <&kp DOWN>;
-            key-positions = <16 6>;
+            key-positions = <27 17>;
         };
 
         combo_left {
             bindings = <&kp LEFT>;
-            key-positions = <5 15>;
+            key-positions = <33 26>;
         };
 
         combo_right {
             bindings = <&kp RIGHT>;
-            key-positions = <18 8>;
+            key-positions = <28 27>;
         };
 
         combo_esc {
@@ -373,7 +373,7 @@
 
         combo_tog2 {
             bindings = <&tog 2>;
-            key-positions = <15 6>;
+            key-positions = <15 5>;
         };
     };
 
