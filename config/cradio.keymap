@@ -323,7 +323,7 @@
 
         combo_down {
             bindings = <&kp DOWN>;
-            key-positions = <27 17>;
+            key-positions = <25 15>;
         };
 
         combo_left {
@@ -333,7 +333,7 @@
 
         combo_right {
             bindings = <&kp RIGHT>;
-            key-positions = <28 27>;
+            key-positions = <26 16>;
         };
 
         combo_esc {
@@ -351,29 +351,29 @@
             key-positions = <16 19>;
         };
 
-        t2 {
+        combo_comment {
             bindings = <&macro_ckcu>;
             key-positions = <11 13>;
         };
 
-        t3 {
+        combo_yyp {
             bindings = <&kp LS(LA(LC(DOWN)))>;
             key-positions = <21 23>;
         };
 
-        t4 {
+        combo_grep {
             bindings = <&macro_grep>;
             key-positions = <18 9>;
         };
 
-        combo_togp {
+        combo_tog3 {
             bindings = <&tog 3>;
             key-positions = <5 25>;
         };
 
         combo_tog2 {
             bindings = <&tog 2>;
-            key-positions = <15 5>;
+            key-positions = <15 6>;
         };
     };
 
