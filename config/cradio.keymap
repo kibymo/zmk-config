@@ -338,7 +338,7 @@
 
         combo_esc {
             bindings = <&kp ESC>;
-            key-positions = <1 3>;
+            key-positions = <0 11>;
         };
 
         combo_tab {
@@ -364,6 +364,16 @@
         t4 {
             bindings = <&macro_grep>;
             key-positions = <18 9>;
+        };
+
+        combo_togp {
+            bindings = <&tog 3>;
+            key-positions = <5 25>;
+        };
+
+        combo_tog2 {
+            bindings = <&tog 2>;
+            key-positions = <15 6>;
         };
     };
 
@@ -416,7 +426,7 @@
         tri_layer {
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp DOWN  &kp RIGHT    &kp HOME  &kp END        &trans
-&out OUT_USB  &kp R         &out OUT_BLE  &none         &none           &tog 3    &kp PAGE_UP  &kp UP    &kp PAGE_DOWN  &kp U
+&out OUT_USB  &kp R         &out OUT_BLE  &none         &none           &none     &kp PAGE_UP  &kp UP    &kp PAGE_DOWN  &kp U
 &none         &kp X         &none         &none         &none           &kp UP    &kp LEFT     &kp DOWN  &kp RIGHT      &kp D
                                           &trans        &trans          &trans    &trans
             >;
