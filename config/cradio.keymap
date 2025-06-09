@@ -114,18 +114,6 @@
             timeout-ms = <50>;
         };
 
-        combo_pipe {
-            bindings = <&kp PIPE>;
-            key-positions = <19 9>;
-            timeout-ms = <50>;
-        };
-
-        combo_qmark {
-            bindings = <&kp BSLH>;
-            key-positions = <19 29>;
-            timeout-ms = <50>;
-        };
-
         combo_lbkt {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <25 26>;
@@ -138,15 +126,15 @@
             timeout-ms = <50>;
         };
 
-        combo_tilde {
-            bindings = <&kp TILDE>;
-            key-positions = <0 10>;
+        combo_pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <19 9>;
             timeout-ms = <50>;
         };
 
-        combo_grave {
-            bindings = <&kp GRAVE>;
-            key-positions = <10 20>;
+        combo_qmark {
+            bindings = <&kp BSLH>;
+            key-positions = <19 29>;
             timeout-ms = <50>;
         };
 
@@ -219,6 +207,18 @@
         combo_rpar {
             bindings = <&kp RPAR>;
             key-positions = <21 22>;
+            timeout-ms = <50>;
+        };
+
+        combo_tilde {
+            bindings = <&kp TILDE>;
+            key-positions = <0 10>;
+            timeout-ms = <50>;
+        };
+
+        combo_grave {
+            bindings = <&kp GRAVE>;
+            key-positions = <10 20>;
             timeout-ms = <50>;
         };
 
@@ -351,16 +351,6 @@
             key-positions = <16 19>;
         };
 
-        combo_comment {
-            bindings = <&macro_ckcu>;
-            key-positions = <1 3>;
-        };
-
-        combo_yyp {
-            bindings = <&kp LS(LA(LC(DOWN)))>;
-            key-positions = <21 23>;
-        };
-
         combo_grep {
             bindings = <&macro_grep>;
             key-positions = <18 9>;
@@ -374,6 +364,16 @@
         combo_tog2 {
             bindings = <&tog 2>;
             key-positions = <15 6>;
+        };
+
+        combo_comment {
+            bindings = <&macro_ckcu>;
+            key-positions = <1 3>;
+        };
+
+        combo_yyp {
+            bindings = <&kp LS(LA(LC(DOWN)))>;
+            key-positions = <21 23>;
         };
 
         combo_ckcc {
