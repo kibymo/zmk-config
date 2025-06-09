@@ -356,15 +356,9 @@
             key-positions = <18 9>;
         };
 
-        combo_tog3 {
-            bindings = <&tog 3>;
-            key-positions = <5 25>;
-        };
-
-        combo_tog2 {
-            bindings = <&tog 2>;
-            key-positions = <15 6>;
-        };
+        combo_uncomment {
+            bindings = <&macro_ckcc>;
+            key-positions = <11 13>;
 
         combo_comment {
             bindings = <&macro_ckcu>;
@@ -376,9 +370,16 @@
             key-positions = <21 23>;
         };
 
-        combo_ckcc {
-            bindings = <&macro_ckcc>;
-            key-positions = <11 13>;
+        combo_tog3 {
+            bindings = <&tog 3>;
+            key-positions = <5 25>;
+        };
+
+        combo_tog2 {
+            bindings = <&tog 2>;
+            key-positions = <15 6>;
+        };
+
         };
     };
 
@@ -393,14 +394,14 @@
         macro_ckcu: macro_ckcu {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(K) &kp LC(U)>;
+            bindings = <&kp LC(K) &kp U>;
             label = "MACRO_CKCU";
         };
 
         macro_ckcc: macro_ckcc {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(K) &kp LC(C)>;
+            bindings = <&kp LC(K) &kp C>;
             label = "MACRO_CKCC";
         };
     };
