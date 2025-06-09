@@ -359,6 +359,7 @@
         combo_uncomment {
             bindings = <&macro_ckcc>;
             key-positions = <11 13>;
+        };
 
         combo_comment {
             bindings = <&macro_ckcu>;
@@ -380,7 +381,6 @@
             key-positions = <15 6>;
         };
 
-        };
     };
 
     macros {
