@@ -224,61 +224,61 @@
 
         combo_n1 {
             bindings = <&kp N1>;
-            key-positions = <1 11>;
+            key-positions = <26 16>;
             timeout-ms = <50>;
         };
 
         combo_n2 {
             bindings = <&kp N2>;
-            key-positions = <2 12>;
+            key-positions = <27 17>;
             timeout-ms = <50>;
         };
 
         combo_n3 {
             bindings = <&kp N3>;
-            key-positions = <3 13>;
+            key-positions = <28 18>;
             timeout-ms = <50>;
         };
 
         combo_n4 {
             bindings = <&kp N4>;
-            key-positions = <4 14>;
+            key-positions = <16 6>;
             timeout-ms = <50>;
         };
 
         combo_n5 {
             bindings = <&kp N5>;
-            key-positions = <11 21>;
+            key-positions = <17 7>;
             timeout-ms = <50>;
         };
 
         combo_n6 {
             bindings = <&kp N6>;
-            key-positions = <12 22>;
+            key-positions = <8 18>;
             timeout-ms = <50>;
         };
 
         combo_n7 {
             bindings = <&kp N7>;
-            key-positions = <23 13>;
+            key-positions = <26 6>;
             timeout-ms = <50>;
         };
 
         combo_n8 {
             bindings = <&kp N8>;
-            key-positions = <24 14>;
+            key-positions = <27 7>;
             timeout-ms = <50>;
         };
 
         combo_n9 {
             bindings = <&kp N9>;
-            key-positions = <21 31>;
+            key-positions = <28 8>;
             timeout-ms = <50>;
         };
 
         combo_n0 {
             bindings = <&kp N0>;
-            key-positions = <31 22>;
+            key-positions = <25 15>;
             timeout-ms = <50>;
         };
 
@@ -318,22 +318,22 @@
 
         combo_up {
             bindings = <&kp UP>;
-            key-positions = <25 15>;
+            key-positions = <25 33>;
         };
 
         combo_down {
             bindings = <&kp DOWN>;
-            key-positions = <15 5>;
+            key-positions = <33 27>;
         };
 
         combo_left {
             bindings = <&kp LEFT>;
-            key-positions = <26 16>;
+            key-positions = <33 26>;
         };
 
         combo_right {
             bindings = <&kp RIGHT>;
-            key-positions = <16 6>;
+            key-positions = <28 33>;
         };
 
         combo_esc {
@@ -378,17 +378,17 @@
 
         combo_tog2 {
             bindings = <&tog 2>;
-            key-positions = <15 6>;
+            key-positions = <15 5>;
         };
 
         cmb_t1 {
             bindings = <&kp A>;
-            key-positions = <1 3 8 18>;
+            key-positions = <1 11>;
         };
 
         cmb_t2 {
             bindings = <&kp B>;
-            key-positions = <11 13 18 28>;
+            key-positions = <11 21>;
         };
     };
 
