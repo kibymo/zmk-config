@@ -358,12 +358,12 @@
 
         combo_uncomment {
             bindings = <&macro_ckcc>;
-            key-positions = <11 13>;
+            key-positions = <8 18>;
         };
 
         combo_comment {
             bindings = <&macro_ckcu>;
-            key-positions = <1 3>;
+            key-positions = <1 3 18 28>;
         };
 
         combo_yyp {
@@ -380,6 +380,16 @@
             bindings = <&tog 2>;
             key-positions = <15 6>;
         };
+
+        cmb_t1 {
+            bindings = <&kp A>;
+            key-positions = <1 3>;
+        };
+
+        cmb_t2 {
+            bindings = <&kp B>;
+            key-positions = <11 13>;
+        };
     };
 
     macros {
@@ -393,14 +403,15 @@
         macro_ckcu: macro_ckcu {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(K) &kp U>;
+            bindings = <&kp LC(K) &kp LC(U)>, <&macro_press>;
+
             label = "MACRO_CKCU";
         };
 
         macro_ckcc: macro_ckcc {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(K) &kp C>;
+            bindings = <&kp LC(K) &kp LC(C)>;
             label = "MACRO_CKCC";
         };
     };
