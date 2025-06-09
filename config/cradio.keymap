@@ -260,25 +260,25 @@
 
         combo_n7 {
             bindings = <&kp N7>;
-            key-positions = <13 23>;
+            key-positions = <2 12>;
             timeout-ms = <50>;
         };
 
         combo_n8 {
             bindings = <&kp N8>;
-            key-positions = <24 14>;
+            key-positions = <3 13>;
             timeout-ms = <50>;
         };
 
         combo_n9 {
             bindings = <&kp N9>;
-            key-positions = <13 3>;
+            key-positions = <4 14>;
             timeout-ms = <50>;
         };
 
         combo_n0 {
             bindings = <&kp N0>;
-            key-positions = <4 14>;
+            key-positions = <14 24>;
             timeout-ms = <50>;
         };
 
@@ -373,12 +373,12 @@
 
         combo_tog3 {
             bindings = <&tog 3>;
-            key-positions = <28 18>;
+            key-positions = <5 25>;
         };
 
         combo_tog2 {
             bindings = <&tog 2>;
-            key-positions = <8 18>;
+            key-positions = <6 15>;
         };
 
         cmb_t1 {
@@ -439,9 +439,9 @@
 
         num_layer {
             bindings = <
-&trans  &kp N1  &kp N2  &kp N3      &kp N4    &kp N7  &kp N8  &kp N9  &trans      &trans
-&trans  &kp N5  &kp N6  &kp N7      &kp N8    &kp N4  &kp N5  &kp N6  &trans      &trans
-&trans  &kp N9  &kp N0  &kp PERIOD  &trans    &kp N1  &kp N2  &kp N3  &kp PERIOD  &trans
+&trans  &kp N1  &kp N2  &kp N3      &kp N4    &trans  &kp N7  &kp N8  &kp N9  &trans
+&trans  &kp N5  &kp N6  &kp N7      &kp N8    &trans  &kp N4  &kp N5  &kp N6  &trans
+&trans  &kp N9  &kp N0  &kp PERIOD  &trans    &trans  &kp N1  &kp N2  &kp N3  &kp PERIOD
                         &trans      &trans    &trans  &kp N0
             >;
         };
