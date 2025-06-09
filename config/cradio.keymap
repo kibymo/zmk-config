@@ -353,7 +353,7 @@
 
         combo_comment {
             bindings = <&macro_ckcu>;
-            key-positions = <11 13>;
+            key-positions = <1 3>;
         };
 
         combo_yyp {
@@ -375,6 +375,11 @@
             bindings = <&tog 2>;
             key-positions = <15 6>;
         };
+
+        combo_ckcc {
+            bindings = <&macro_ckcc>;
+            key-positions = <11 13>;
+        };
     };
 
     macros {
@@ -390,6 +395,13 @@
             #binding-cells = <0>;
             bindings = <&kp LC(K) &kp LC(U)>;
             label = "MACRO_CKCU";
+        };
+
+        macro_ckcc: macro_ckcc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(K) &kp LC(C)>;
+            label = "MACRO_CKCC";
         };
     };
 
