@@ -428,7 +428,7 @@
             >;
         };
 
-        right_layer {
+        sym_layer {
             bindings = <
 &kp TILDE  &kp EXCL   &kp AT     &kp POUND  &kp DLLR    &kp UNDER  &kp COLON  &kp DQT  &kp PLUS   &kp PIPE
 &kp GRAVE  &kp PRCNT  &kp CARET  &kp AMPS   &kp STAR    &kp MINUS  &kp SEMI   &kp SQT  &kp EQUAL  &kp BSLH
@@ -437,16 +437,16 @@
             >;
         };
 
-        left_layer {
+        num_layer {
             bindings = <
-&trans  &kp N1  &kp N2  &kp N3      &kp N4    &trans  &kp N7  &kp N8  &kp N9  &trans
-&trans  &kp N5  &kp N6  &kp N7      &kp N8    &trans  &kp N4  &kp N5  &kp N6  &trans
-&trans  &kp N9  &kp N0  &kp PERIOD  &trans    &trans  &kp N1  &kp N2  &kp N3  &kp DOT
+&trans  &kp N1  &kp N2  &kp N3      &kp N4    &kp N7  &kp N8  &kp N9  &trans      &trans
+&trans  &kp N5  &kp N6  &kp N7      &kp N8    &kp N4  &kp N5  &kp N6  &trans      &trans
+&trans  &kp N9  &kp N0  &kp PERIOD  &trans    &kp N1  &kp N2  &kp N3  &kp PERIOD  &trans
                         &trans      &trans    &trans  &kp N0
             >;
         };
 
-        tri_layer {
+        nav_layer {
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp DOWN  &kp RIGHT    &kp HOME  &kp END        &trans
 &out OUT_USB  &kp R         &out OUT_BLE  &none         &none           &none     &kp PAGE_UP  &kp UP    &kp PAGE_DOWN  &kp U
