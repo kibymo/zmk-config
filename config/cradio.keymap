@@ -458,9 +458,9 @@
 
         num_layer {
             bindings = <
-&trans  &kp F1  &trans  &trans  &trans    &trans  &kp N7  &kp N8  &kp N9  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &kp N4  &kp N5  &kp N6  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &kp N1  &kp N2  &kp N3  &kp PERIOD
+&trans   &kp F1  &kp F2   &kp F3   &kp F4   &trans  &kp N7  &kp N8  &kp N9  &trans
+&trans  &kp F5  &kp F6   &kp F7   &kp F8    &trans  &kp N4  &kp N5  &kp N6  &trans
+&trans  &kp F9  &kp F10  &kp F11  &kp F12    &trans  &kp N1  &kp N2  &kp N3  &kp PERIOD
                         &trans  &trans    &trans  &kp N0
             >;
         };
@@ -476,9 +476,9 @@
 
         func_layer {
             bindings = <
-&macro_q   &kp F1  &kp F2   &kp F3   &kp F4     &none  &none     &none     &none      &none
-&macro_wq  &kp F5  &kp F6   &kp F7   &kp F8     &none  &none     &kp UP    &none      &none
-&none      &kp F9  &kp F10  &kp F11  &kp F12    &none  &kp LEFT  &kp DOWN  &kp RIGHT  &none
+&macro_q   &none  &none     &none     &none     &none  &none     &none     &none      &none
+&macro_wq  &none  &none     &none     &none     &none  &none     &none    &none      &none
+&none      &none  &none     &none     &none    &none  &none     &none     &none     &none
                             &none    &none      &none  &none
             >;
         };
