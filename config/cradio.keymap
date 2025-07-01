@@ -429,7 +429,7 @@
         macro_layer {
             bindings = <
 &macro_q   &none  &none  &macro_ckcc           &none          &none  &none  &none  &none  &macro_Backspace
-&macro_wq  &none  &none  &macro_ckcc           &macro_grep    &none  &none  &none  &none  &none
+&macro_wq  &none  &none  &macro_ckcu           &macro_grep    &none  &none  &none  &none  &none
 &kp LC(Z)  &none  &none  &kp LS(LA(LC(DOWN)))  &none          &none  &none  &none  &none  &none
                          &none                 &none          &none  &none
             >;
