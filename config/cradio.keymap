@@ -328,7 +328,7 @@
 
         combo_enter {
             bindings = <&kp ENTER>;
-            key-positions = <19 28>;
+            key-positions = <9 18>;
         };
 
         combo_tog3 {
@@ -339,6 +339,11 @@
         combo_tog2 {
             bindings = <&tog 2>;
             key-positions = <6 15>;
+        };
+
+        combo_enter2 {
+            bindings = <&kp ENTER>;
+            key-positions = <28 19>;
         };
     };
 
