@@ -335,11 +335,6 @@
             bindings = <&tog 3>;
             key-positions = <7 27>;
         };
-
-        combo_num_lck {
-            bindings = <&kt KP_NUMLOCK>;
-            key-positions = <5 25>;
-        };
     };
 
     macros {
