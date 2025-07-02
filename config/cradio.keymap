@@ -410,19 +410,19 @@
 
         num_layer {
             bindings = <
-&kp F3   &kp F1  &kp F2   &kp F3   &kp F4     &none  &kp KP_NUMBER_7  &kp KP_N8        &kp KP_NUMBER_9  &trans
-&kp F5   &kp F5  &kp F6   &kp F7   &kp F8     &none  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none
-&kp F11  &kp F9  &kp F10  &kp F11  &kp F12    &none  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT
-                          &trans   &trans     &none  &kp KP_NUMBER_0
+&kp F3   &kp F1  &kp F2   &kp F3   &kp F4     &kp KP_NUMBER_8  &kp N7  &kp N8  &kp N9  &trans
+&kp F5   &kp F5  &kp F6   &kp F7   &kp F8     &kp KP_NUMBER_4  &kp N4  &kp N5  &kp N6  &kp KP_NUMBER_6
+&kp F11  &kp F9  &kp F10  &kp F11  &kp F12    &kp KP_NUMBER_2  &kp N1  &kp N2  &kp N3  &kp DOT
+                          &trans   &trans     &none            &kp N0
             >;
         };
 
         nav_layer {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp DOWN  &kp HOME   &kp UP_ARROW  &kp PAGE_UP    &trans
-&out OUT_USB  &kp R         &out OUT_BLE  &none         &none           &kp LEFT  &kp LEFT   &kp DOWN      &kp RIGHT      &kp U
-&none         &kp X         &none         &none         &none           &kp UP    &kp RIGHT  &kp END       &kp PAGE_DOWN  &kp D
-                                          &trans        &trans          &trans    &trans
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none   &kp HOME  &none     &kp PAGE_UP    &trans
+&out OUT_USB  &kp R         &out OUT_BLE  &none         &none           &none   &kp END   &kp UP    &kp PAGE_DOWN  &kp U
+&none         &kp X         &none         &none         &none           &none   &kp LEFT  &kp DOWN  &kp RIGHT      &kp D
+                                          &trans        &trans          &trans  &trans
             >;
         };
 
