@@ -328,11 +328,16 @@
 
         combo_tog2 {
             bindings = <&tog 2>;
-            key-positions = <6 15>;
+            key-positions = <6 26>;
         };
 
         combo_tog3 {
             bindings = <&tog 3>;
+            key-positions = <7 27>;
+        };
+
+        combo_num_lck {
+            bindings = <&kt KP_NUMLOCK>;
             key-positions = <5 25>;
         };
     };
@@ -405,10 +410,10 @@
 
         num_layer {
             bindings = <
-&kp F3   &kp F1  &kp F2   &kp F3   &kp F4     &kt KP_NUMLOCK  &kp KP_NUMBER_7  &kp KP_N8        &kp KP_NUMBER_9  &trans
-&kp F5   &kp F5  &kp F6   &kp F7   &kp F8     &none           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none
-&kp F11  &kp F9  &kp F10  &kp F11  &kp F12    &none           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT
-                          &trans   &trans     &none           &kp KP_NUMBER_0
+&kp F3   &kp F1  &kp F2   &kp F3   &kp F4     &none  &kp KP_NUMBER_7  &kp KP_N8        &kp KP_NUMBER_9  &trans
+&kp F5   &kp F5  &kp F6   &kp F7   &kp F8     &none  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none
+&kp F11  &kp F9  &kp F10  &kp F11  &kp F12    &none  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT
+                          &trans   &trans     &none  &kp KP_NUMBER_0
             >;
         };
 
