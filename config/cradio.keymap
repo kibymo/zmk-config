@@ -224,61 +224,61 @@
 
         combo_n1 {
             bindings = <&kp N1>;
-            key-positions = <15 5>;
+            key-positions = <26 16>;
             timeout-ms = <50>;
         };
 
         combo_n2 {
             bindings = <&kp N2>;
-            key-positions = <16 6>;
+            key-positions = <27 17>;
             timeout-ms = <50>;
         };
 
         combo_n3 {
             bindings = <&kp N3>;
-            key-positions = <17 7>;
+            key-positions = <28 18>;
             timeout-ms = <50>;
         };
 
         combo_n4 {
             bindings = <&kp N4>;
-            key-positions = <15 25>;
+            key-positions = <16 6>;
             timeout-ms = <50>;
         };
 
         combo_n5 {
             bindings = <&kp N5>;
-            key-positions = <16 26>;
+            key-positions = <7 17>;
             timeout-ms = <50>;
         };
 
         combo_n6 {
             bindings = <&kp N6>;
-            key-positions = <2 12>;
+            key-positions = <8 18>;
             timeout-ms = <50>;
         };
 
         combo_n7 {
             bindings = <&kp N7>;
-            key-positions = <3 13>;
+            key-positions = <6 26>;
             timeout-ms = <50>;
         };
 
         combo_n8 {
             bindings = <&kp N8>;
-            key-positions = <4 14>;
+            key-positions = <7 27>;
             timeout-ms = <50>;
         };
 
         combo_n9 {
             bindings = <&kp N9>;
-            key-positions = <13 23>;
+            key-positions = <8 28>;
             timeout-ms = <50>;
         };
 
         combo_n0 {
             bindings = <&kp N0>;
-            key-positions = <14 24>;
+            key-positions = <26 33>;
             timeout-ms = <50>;
         };
 
@@ -328,12 +328,62 @@
 
         combo_tog2 {
             bindings = <&tog 2>;
-            key-positions = <6 26>;
+            key-positions = <6 15>;
         };
 
         combo_tog3 {
             bindings = <&tog 3>;
-            key-positions = <7 27>;
+            key-positions = <5 25>;
+        };
+
+        combo_n1l {
+            bindings = <&kp N1>;
+            key-positions = <1 11>;
+        };
+
+        combo_n2l {
+            bindings = <&kp N2>;
+            key-positions = <2 12>;
+        };
+
+        combo_n3l {
+            bindings = <&kp N3>;
+            key-positions = <3 13>;
+        };
+
+        combo_n4l {
+            bindings = <&kp N4>;
+            key-positions = <4 14>;
+        };
+
+        combo_n5l {
+            bindings = <&kp N5>;
+            key-positions = <11 21>;
+        };
+
+        combo_n6l {
+            bindings = <&kp N6>;
+            key-positions = <12 22>;
+        };
+
+        combo_n7l {
+            bindings = <&kp N7>;
+            key-positions = <13 23>;
+        };
+
+        combo_n8l {
+            bindings = <&kp N8>;
+            key-positions = <14 24>;
+        };
+
+        combo_n9l {
+            bindings = <&kp N9>;
+            key-positions = <5 15>;
+        };
+
+        combo_n0l {
+            bindings = <&kp N0>;
+            key-positions = <15 25>;
         };
     };
 
@@ -405,10 +455,10 @@
 
         num_layer {
             bindings = <
-&kp F3   &kp F1  &kp F2   &kp F3   &kp F4     &kp KP_NUMBER_8  &kp N7  &kp N8  &kp N9  &trans
-&kp F5   &kp F5  &kp F6   &kp F7   &kp F8     &kp KP_NUMBER_4  &kp N4  &kp N5  &kp N6  &kp KP_NUMBER_6
-&kp F11  &kp F9  &kp F10  &kp F11  &kp F12    &kp KP_NUMBER_2  &kp N1  &kp N2  &kp N3  &kp DOT
-                          &trans   &trans     &none            &kp N0
+&none  &kp F1  &kp F2   &kp F3   &kp F4     &kp KP_NUMBER_8  &kp N7  &kp N8  &kp N9  &trans
+&none  &kp F5  &kp F6   &kp F7   &kp F8     &kp KP_NUMBER_4  &kp N4  &kp N5  &kp N6  &kp KP_NUMBER_6
+&none  &kp F9  &kp F10  &kp F11  &kp F12    &kp KP_NUMBER_2  &kp N1  &kp N2  &kp N3  &kp DOT
+                        &trans   &trans     &none            &kp N0
             >;
         };
 
@@ -423,9 +473,9 @@
 
         macro_layer {
             bindings = <
-&macro_q   &none  &none  &macro_ckcc           &none                &none  &none  &none  &none  &macro_Backspace
-&macro_wq  &none  &none  &macro_ckcu           &macro_grep          &none  &none  &none  &none  &none
-&kp LC(Z)  &none  &none  &kp LS(LA(LC(DOWN)))  &kp LC(LS(SPACE))    &none  &none  &none  &none  &none
+&macro_q   &none  &none  &macro_ckcc           &none                &none  &none  &none  &kp PRINTSCREEN  &macro_Backspace
+&macro_wq  &none  &none  &macro_ckcu           &macro_grep          &none  &none  &none  &none            &none
+&kp LC(Z)  &none  &none  &kp LS(LA(LC(DOWN)))  &kp LC(LS(SPACE))    &none  &none  &none  &none            &none
                          &none                 &none                &none  &none
             >;
         };
