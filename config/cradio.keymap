@@ -355,6 +355,16 @@
             bindings = <&kp RIGHT>;
             key-positions = <18 28>;
         };
+
+        combo_pagedown {
+            bindings = <&kp PAGE_DOWN>;
+            key-positions = <8 18>;
+        };
+
+        combo_pageup {
+            bindings = <&kp PAGE_UP>;
+            key-positions = <6 16>;
+        };
     };
 
     macros {
@@ -425,10 +435,10 @@
 
         num_layer {
             bindings = <
-&none  &kp F1  &kp F2   &kp F3   &kp F4     &kp KP_NUMBER_8  &kp N7  &kp N8  &kp N9  &trans
-&none  &kp F5  &kp F6   &kp F7   &kp F8     &kp KP_NUMBER_4  &kp N4  &kp N5  &kp N6  &kp KP_NUMBER_6
-&none  &kp F9  &kp F10  &kp F11  &kp F12    &kp KP_NUMBER_2  &kp N1  &kp N2  &kp N3  &kp DOT
-                        &trans   &trans     &none            &kp N0
+&none  &kp F1  &kp F2   &kp F3   &kp F4     &none  &kp N7  &kp N8  &kp N9  &trans
+&none  &kp F5  &kp F6   &kp F7   &kp F8     &none  &kp N4  &kp N5  &kp N6  &none
+&none  &kp F9  &kp F10  &kp F11  &kp F12    &none  &kp N1  &kp N2  &kp N3  &kp DOT
+                        &trans   &trans     &none  &kp N0
             >;
         };
 
