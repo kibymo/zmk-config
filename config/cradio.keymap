@@ -224,61 +224,61 @@
 
         combo_n1 {
             bindings = <&kp N1>;
-            key-positions = <1 11>;
+            key-positions = <5 15>;
             timeout-ms = <50>;
         };
 
         combo_n2 {
             bindings = <&kp N2>;
-            key-positions = <2 12>;
+            key-positions = <6 16>;
             timeout-ms = <50>;
         };
 
         combo_n3 {
             bindings = <&kp N3>;
-            key-positions = <3 13>;
+            key-positions = <7 17>;
             timeout-ms = <50>;
         };
 
         combo_n4 {
             bindings = <&kp N4>;
-            key-positions = <4 14>;
+            key-positions = <15 25>;
             timeout-ms = <50>;
         };
 
         combo_n5 {
             bindings = <&kp N5>;
-            key-positions = <11 21>;
+            key-positions = <26 16>;
             timeout-ms = <50>;
         };
 
         combo_n6 {
             bindings = <&kp N6>;
-            key-positions = <12 22>;
+            key-positions = <12 2>;
             timeout-ms = <50>;
         };
 
         combo_n7 {
             bindings = <&kp N7>;
-            key-positions = <13 23>;
+            key-positions = <13 3>;
             timeout-ms = <50>;
         };
 
         combo_n8 {
             bindings = <&kp N8>;
-            key-positions = <14 24>;
+            key-positions = <14 4>;
             timeout-ms = <50>;
         };
 
         combo_n9 {
             bindings = <&kp N9>;
-            key-positions = <5 15>;
+            key-positions = <13 23>;
             timeout-ms = <50>;
         };
 
         combo_n0 {
             bindings = <&kp N0>;
-            key-positions = <25 15>;
+            key-positions = <14 24>;
             timeout-ms = <50>;
         };
 
@@ -334,36 +334,6 @@
         combo_tog3 {
             bindings = <&tog 3>;
             key-positions = <5 25>;
-        };
-
-        combo_up {
-            bindings = <&kp UP_ARROW>;
-            key-positions = <7 17>;
-        };
-
-        combo_down {
-            bindings = <&kp DOWN_ARROW>;
-            key-positions = <17 27>;
-        };
-
-        combo_left {
-            bindings = <&kp LEFT_ARROW>;
-            key-positions = <16 26>;
-        };
-
-        combo_right {
-            bindings = <&kp RIGHT>;
-            key-positions = <18 28>;
-        };
-
-        combo_pagedown {
-            bindings = <&kp PAGE_DOWN>;
-            key-positions = <8 18>;
-        };
-
-        combo_pageup {
-            bindings = <&kp PAGE_UP>;
-            key-positions = <6 16>;
         };
     };
 
@@ -435,10 +405,10 @@
 
         num_layer {
             bindings = <
-&none  &kp F1  &kp F2   &kp F3   &kp F4     &none  &kp N7  &kp N8  &kp N9  &trans
-&none  &kp F5  &kp F6   &kp F7   &kp F8     &none  &kp N4  &kp N5  &kp N6  &none
-&none  &kp F9  &kp F10  &kp F11  &kp F12    &none  &kp N1  &kp N2  &kp N3  &kp DOT
-                        &trans   &trans     &none  &kp N0
+&none  &kp F1  &kp F2   &kp F3   &kp F4     &kp KP_NUMBER_8  &kp N7  &kp N8  &kp N9  &trans
+&none  &kp F5  &kp F6   &kp F7   &kp F8     &kp KP_NUMBER_4  &kp N4  &kp N5  &kp N6  &kp KP_NUMBER_6
+&none  &kp F9  &kp F10  &kp F11  &kp F12    &kp KP_NUMBER_2  &kp N1  &kp N2  &kp N3  &kp DOT
+                        &trans   &trans     &none            &kp N0
             >;
         };
 
