@@ -415,17 +415,17 @@
         nav_layer {
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none   &kp HOME  &none     &kp PAGE_UP    &trans
-&out OUT_USB  &kp R         &out OUT_BLE  &none         &none           &none   &kp END   &kp UP    &kp PAGE_DOWN  &kp U
-&none         &kp X         &none         &none         &none           &none   &kp LEFT  &kp DOWN  &kp RIGHT      &kp D
+&out OUT_USB  &none         &out OUT_BLE  &none         &none           &none   &kp END   &kp UP    &kp PAGE_DOWN  &none
+&none         &none         &none         &none         &none           &none   &kp LEFT  &kp DOWN  &kp RIGHT      &none
                                           &trans        &trans          &trans  &trans
             >;
         };
 
         macro_layer {
             bindings = <
-&macro_q   &none  &none  &macro_ckcc           &none                &none  &none  &none  &kp PRINTSCREEN  &macro_Backspace
+&macro_q   &kp D  &none  &macro_ckcc           &none                &none  &none  &none  &kp PRINTSCREEN  &macro_Backspace
 &macro_wq  &none  &none  &macro_ckcu           &macro_grep          &none  &none  &none  &none            &none
-&kp LC(Z)  &none  &none  &kp LS(LA(LC(DOWN)))  &kp LC(LS(SPACE))    &none  &none  &none  &none            &none
+&kp LC(Z)  &kp X  &none  &kp LS(LA(LC(DOWN)))  &kp LC(LS(SPACE))    &none  &none  &none  &none            &none
                          &none                 &none                &none  &none
             >;
         };
