@@ -305,9 +305,9 @@
         //            timeout-ms = <50>;
         //        };
 
-        combo_ctrl_spc_tmp {
-            bindings = <&kp LC(LS(SPACE))>;
-            key-positions = <20 31>;
+        combo_ctrl_c {
+            bindings = <&kp LC(C)>;
+            key-positions = <20 23>;
             timeout-ms = <50>;
         };
 
@@ -334,6 +334,12 @@
         combo_tog3 {
             bindings = <&tog 3>;
             key-positions = <5 25>;
+        };
+
+        combo_ctrl_v {
+            bindings = <&kp LC(V)>;
+            key-positions = <20 24>;
+            timeout-ms = <50>;
         };
     };
 
