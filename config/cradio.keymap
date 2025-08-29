@@ -341,6 +341,12 @@
             key-positions = <20 24>;
             timeout-ms = <50>;
         };
+
+        combo_ctrl_b {
+            bindings = <&kp LC(B)>;
+            key-positions = <20 4>;
+            timeout-ms = <50>;
+        };
     };
 
     macros {
