@@ -347,6 +347,18 @@
             key-positions = <20 4>;
             timeout-ms = <50>;
         };
+
+        combo_ctrl_z {
+            bindings = <&kp LC(Z)>;
+            key-positions = <20 30>;
+            timeout-ms = <50>;
+        };
+
+        combo_ctrl_r {
+            bindings = <&kp LC(R)>;
+            key-positions = <20 2>;
+            timeout-ms = <50>;
+        };
     };
 
     macros {
@@ -375,14 +387,14 @@
         macro_wq: macro_wq {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp ESC &kp LS(Z) &kp LS(Z)>;
+            bindings = <&kp ESC &kp COLON &kp W &kp Q &kp EXCL>;
             label = "MACRO_WQ";
         };
 
         macro_q: macro_q {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp ESC &kp LS(Z) &kp LS(Q)>;
+            bindings = <&kp ESC &kp COLON &kp Q &kp EXCL &kp RET>;
             label = "MACRO_Q";
         };
 
@@ -435,7 +447,7 @@
 
         macro_layer {
             bindings = <
-&macro_q   &kp D  &none  &macro_ckcc           &none                &none  &kp HOME  &none           &kp PAGE_UP    &macro_Backspace
+&macro_q   &none  &none  &macro_ckcc           &none                &none  &kp HOME  &none           &kp PAGE_UP    &macro_Backspace
 &macro_wq  &none  &none  &macro_ckcu           &macro_grep          &none  &kp END   &kp UP_ARROW    &kp PAGE_DOWN  &none
 &kp LC(Z)  &kp X  &none  &kp LS(LA(LC(DOWN)))  &kp LC(LS(SPACE))    &none  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT      &none
                          &none                 &none                &none  &none
