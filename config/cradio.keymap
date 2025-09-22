@@ -224,61 +224,61 @@
 
         combo_n1 {
             bindings = <&kp N1>;
-            key-positions = <5 15>;
+            key-positions = <16 26>;
             timeout-ms = <50>;
         };
 
         combo_n2 {
             bindings = <&kp N2>;
-            key-positions = <6 16>;
+            key-positions = <27 17>;
             timeout-ms = <50>;
         };
 
         combo_n3 {
             bindings = <&kp N3>;
-            key-positions = <7 17>;
+            key-positions = <28 18>;
             timeout-ms = <50>;
         };
 
         combo_n4 {
             bindings = <&kp N4>;
-            key-positions = <15 25>;
+            key-positions = <6 16>;
             timeout-ms = <50>;
         };
 
         combo_n5 {
             bindings = <&kp N5>;
-            key-positions = <26 16>;
+            key-positions = <7 17>;
             timeout-ms = <50>;
         };
 
         combo_n6 {
             bindings = <&kp N6>;
-            key-positions = <12 2>;
+            key-positions = <8 18>;
             timeout-ms = <50>;
         };
 
         combo_n7 {
             bindings = <&kp N7>;
-            key-positions = <13 3>;
+            key-positions = <6 26>;
             timeout-ms = <50>;
         };
 
         combo_n8 {
             bindings = <&kp N8>;
-            key-positions = <14 4>;
+            key-positions = <7 27>;
             timeout-ms = <50>;
         };
 
         combo_n9 {
             bindings = <&kp N9>;
-            key-positions = <13 23>;
+            key-positions = <8 28>;
             timeout-ms = <50>;
         };
 
         combo_n0 {
             bindings = <&kp N0>;
-            key-positions = <14 24>;
+            key-positions = <33 25>;
             timeout-ms = <50>;
         };
 
@@ -331,33 +331,49 @@
         };
 
         combo_ctrl_c {
-            bindings = <&kp LC(C)>;
+            bindings = <&kp RC(C)>;
             key-positions = <20 23>;
             timeout-ms = <50>;
         };
 
         combo_ctrl_v {
-            bindings = <&kp LC(V)>;
+            bindings = <&kp RC(V)>;
             key-positions = <20 24>;
             timeout-ms = <50>;
         };
 
         combo_ctrl_b {
-            bindings = <&kp LC(B)>;
+            bindings = <&kp RC(B)>;
             key-positions = <20 4>;
             timeout-ms = <50>;
         };
 
         combo_ctrl_z {
-            bindings = <&kp LC(Z)>;
+            bindings = <&kp RC(Z)>;
             key-positions = <20 30>;
             timeout-ms = <50>;
         };
 
         combo_ctrl_r {
-            bindings = <&kp LC(R)>;
+            bindings = <&kp RC(R)>;
             key-positions = <20 2>;
             timeout-ms = <50>;
+        };
+
+        combo_esc2 {
+            bindings = <&kp ESC>;
+            key-positions = <12 1>;
+        };
+
+        combo_ctrl_w {
+            bindings = <&kp RC(W)>;
+            key-positions = <20 3>;
+            timeout-ms = <50>;
+        };
+
+        combo_tab2 {
+            bindings = <&kp TAB>;
+            key-positions = <0 12>;
         };
     };
 
@@ -439,7 +455,7 @@
         nav_layer {
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none   &kp HOME  &none     &kp PAGE_UP    &trans
-&out OUT_USB  &none         &out OUT_BLE  &none         &none           &none   &kp END   &kp UP    &kp PAGE_DOWN  &none
+&out OUT_USB  &out OUT_TOG  &out OUT_BLE  &none         &none           &none   &kp END   &kp UP    &kp PAGE_DOWN  &none
 &none         &none         &none         &none         &none           &none   &kp LEFT  &kp DOWN  &kp RIGHT      &none
                                           &trans        &trans          &trans  &trans
             >;
