@@ -381,6 +381,12 @@
             bindings = <&kp RG(Q)>;
             key-positions = <0 23>;
         };
+
+        combo_ctrl_d {
+            bindings = <&kp RC(D)>;
+            key-positions = <20 1>;
+            timeout-ms = <50>;
+        };
     };
 
     macros {
