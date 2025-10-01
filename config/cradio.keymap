@@ -311,9 +311,19 @@
             key-positions = <0 11>;
         };
 
+        combo_esc2 {
+            bindings = <&kp ESC>;
+            key-positions = <12 1>;
+        };
+
         combo_tab {
             bindings = <&kp TAB>;
             key-positions = <10 13>;
+        };
+
+        combo_tab2 {
+            bindings = <&kp TAB>;
+            key-positions = <0 12>;
         };
 
         combo_enter {
@@ -361,20 +371,10 @@
             timeout-ms = <50>;
         };
 
-        combo_esc2 {
-            bindings = <&kp ESC>;
-            key-positions = <12 1>;
-        };
-
         combo_ctrl_w {
             bindings = <&kp RC(W)>;
             key-positions = <20 3>;
             timeout-ms = <50>;
-        };
-
-        combo_tab2 {
-            bindings = <&kp TAB>;
-            key-positions = <0 12>;
         };
 
         combo_meta_q {
@@ -394,7 +394,6 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(K) &kp LC(U)>, <&macro_press>;
-
             label = "MACRO_CKCU";
         };
 
