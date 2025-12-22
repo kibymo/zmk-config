@@ -394,6 +394,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(K) &kp LC(U)>, <&macro_press>;
+
             label = "MACRO_CKCU";
         };
 
@@ -430,6 +431,13 @@
             #binding-cells = <0>;
             bindings = <&kp S &kp T &kp T &kp Y &kp SPACE &kp E &kp R &kp A &kp S &kp E &kp SPACE &kp LC(V) &kp BACKSPACE>;
             label = "MACRO_BACKSPACE";
+        };
+
+        macro_p1: macro_p1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp P &kp O &kp N &kp Y>;
+            label = "MACRO_P1";
         };
     };
 
@@ -474,10 +482,10 @@
 
         macro_layer {
             bindings = <
-&macro_q   &none  &none  &macro_ckcc           &none                &none  &kp HOME  &mkp MCLK       &kp PAGE_UP    &macro_Backspace
-&macro_wq  &none  &none  &macro_ckcu           &macro_grep          &none  &kp END   &kp UP_ARROW    &kp PAGE_DOWN  &none
-&kp LC(Z)  &kp X  &none  &kp LS(LA(LC(DOWN)))  &kp LC(LS(SPACE))    &none  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT      &none
-                         &none                 &none                &none  &none
+&none      &none  &macro_p1  &macro_wq             &macro_q             &none  &kp HOME  &mkp MCLK       &kp PAGE_UP    &macro_Backspace
+&none      &none  &none      &none                 &macro_grep          &none  &kp END   &kp UP_ARROW    &kp PAGE_DOWN  &none
+&kp LC(Z)  &kp X  &none      &kp LS(LA(LC(DOWN)))  &kp LC(LS(SPACE))    &none  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT      &none
+                             &none                 &none                &none  &none
             >;
         };
     };
