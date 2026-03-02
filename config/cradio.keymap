@@ -325,18 +325,18 @@
             key-positions = <16 19>;
         };
 
-        combo_tog2 {
-            bindings = <&tog 2>;
+        combo_tog3 {
+            bindings = <&tog 3>;
             key-positions = <6 15>;
         };
 
-        combo_tog3 {
-            bindings = <&tog 3>;
+        combo_tog4 {
+            bindings = <&tog 4>;
             key-positions = <5 25>;
         };
 
-        combo_tog5 {
-            bindings = <&tog 5>;
+        combo_tog1 {
+            bindings = <&tog 1>;
             key-positions = <15 17>;
         };
 
@@ -448,7 +448,16 @@
 &kp Q         &kp D        &kp R         &kp W            &kp B          &kp J        &kp F        &kp U             &kp P             &kp BACKSPACE
 &kp A         &kp S        &kp H         &kp T            &kp G          &kp Y        &kp N        &kp E             &kp O             &kp I
 &hml LCTRL Z  &hml LALT X  &hml LSHFT M  &hml LEFT_GUI C  &kp V          &kp K        &hmr RGUI L  &hmr RSHFT COMMA  &hmr RALT PERIOD  &hmr LCTRL SLASH
-                                         &lt 4 ESC        &lt 2 SPACE    &lt 1 ENTER  &lt 3 TAB
+                                         &lt 5 ESC        &lt 3 SPACE    &lt 2 ENTER  &lt 4 TAB
+            >;
+        };
+
+        qwert_layer {
+            bindings = <
+&kp Q         &kp W        &kp E         &kp R            &kp T     &kp Y   &kp U        &kp I             &kp O             &kp P
+&kp A         &kp S        &kp D         &kp F            &kp G     &kp H   &kp J        &kp K             &kp L             &kp ENTER
+&hml LCTRL Z  &hml LALT X  &hml LSHFT C  &hml LEFT_GUI V  &kp B     &kp N   &hmr RGUI M  &hmr RSHFT COMMA  &hmr RALT PERIOD  &hmr LCTRL SLASH
+                                         &lt 5 TAB        &lt 3 SPACE    &lt 2 SPACE  &lt 4 BACKSPACE
             >;
         };
 
@@ -488,13 +497,6 @@
             >;
         };
 
-        qwert_layer {
-            bindings = <
-&kp Q         &kp W        &kp E         &kp R            &kp T     &kp Y   &kp U        &kp I             &kp O             &kp P
-&kp A         &kp S        &kp D         &kp F            &kp G     &kp H   &kp J        &kp K             &kp L             &kp ENTER
-&hml LCTRL Z  &hml LALT X  &hml LSHFT C  &hml LEFT_GUI V  &kp B     &kp N   &hmr RGUI M  &hmr RSHFT COMMA  &hmr RALT PERIOD  &hmr LCTRL SLASH
-                                         &lt 4 TAB        &lt 2 SPACE    &lt 1 SPACE  &lt 3 BACKSPACE
-            >;
-        };
+
     };
 };
