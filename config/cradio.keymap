@@ -335,6 +335,11 @@
             key-positions = <5 25>;
         };
 
+        combo_tog5 {
+            bindings = <&tog 5>;
+            key-positions = <15 17>;
+        };
+
         combo_ctrl_c {
             bindings = <&kp RC(C)>;
             key-positions = <20 23>;
