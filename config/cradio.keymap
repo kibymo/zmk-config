@@ -58,11 +58,12 @@
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
-            tri_layer {
-                if-layers = <2 4>;
-                then-layer = <5>;
-           };
+
+        tri_qwert {
+            if-layers = <2 4>;
+            then-layer = <5>;
         };
+    };
 
     combos {
         compatible = "zmk,combos";
