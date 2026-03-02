@@ -56,14 +56,7 @@
         //        };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        tri_qwert {
-            if-layers = <2 4>;
-            then-layer = <5>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 
     combos {
         compatible = "zmk,combos";
