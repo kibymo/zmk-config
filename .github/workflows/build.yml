@@ -1,53 +1,9 @@
-name: Build ZMK firmware
-on: 
-  push:
-  pull_request:
-  workflow_dispatch:
-
-permissions:
-  contents: read
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        include:
-          - board: nice_nano_v2
-            shield: cradio_left
-          - board: nice_nano_v2
-            shield: cradio_right
-    steps:
-    - uses: actions/checkout@v4
+    - name: ZMK Docker Build
+      uses: docker://zmkfirmware/zephyr-west-action:latest
       with:
-        submodules: recursive
-        token: ${{ secrets.GITHUB_TOKEN }}
-
-    - name: West Init
-      uses: zmkfirmware/zephyr-west-action@v0.1.0
-      with:
-        command: init
-        command-args: '-l .'
-
+        args: 'init "-l ."'
+    
     - name: West Update
-      uses: zmkfirmware/zephyr-west-action@v0.1.0
+      uses: docker://zmkfirmware/zephyr-west-action:latest
       with:
-        command: update
-
-    - name: Build
-      run: |
-        west build -p always \
-          -b ${{ matrix.board }} \
-          -Dshield=${{ matrix.shield }} \
-          --no-sysbuild
-
-    - name: Package Firmware
-      run: |
-        FIRMWARE=$(find build -name "zephyr*.uf2" | head -1)
-        zip -j cradio-${{ matrix.shield }}.zip "$FIRMWARE"
-
-    - name: Upload Firmware
-      uses: actions/upload-artifact@v4
-      with:
-        name: firmware-${{ matrix.shield }}
-        path: cradio-${{ matrix.shield }}.zip
+        args: 'update'
