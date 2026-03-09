@@ -1,53 +1,6 @@
 name: Build ZMK firmware
-on: 
-  push:
-  pull_request:
-  workflow_dispatch:
+on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        include:
-          - board: nice_nano_v2
-            shield: cradio_left
-          - board: nice_nano_v2
-            shield: cradio_right
-    steps:
-    - uses: actions/checkout@v4
-      with:
-        submodules: recursive
-        token: ${{ secrets.GITHUB_TOKEN }}
-
-    - name: Install Dependencies
-      run: |
-        sudo apt update
-        sudo apt install -y python3-pip git cmake ninja-build gperf \
-          ccache dfu-util minicom
-        pip3 install --user west
-
-    - name: Setup West
-      run: |
-        echo "$HOME/.local/bin" >> $GITHUB_PATH
-        west init
-        west update
-
-    - name: Build
-      run: |
-        west build -p always \
-          -b ${{ matrix.board }} \
-          -Dshield=${{ matrix.shield }} \
-          --no-sysbuild
-
-    - name: Package Firmware
-      run: |
-        FIRMWARE=$(find build -name "zephyr*.uf2" | head -1)
-        echo "Firmware: $FIRMWARE"
-        zip -j cradio-${{ matrix.shield }}.zip "$FIRMWARE"
-
-    - name: Upload Firmware
-      uses: actions/upload-artifact@v4
-      with:
-        name: firmware-${{ matrix.shield }}
-        path: cradio-${{ matrix.shield }}.zip
+  uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
