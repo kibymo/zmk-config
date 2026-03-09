@@ -20,9 +20,16 @@ jobs:
         submodules: recursive
         token: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Setup ZMK Environment
+    - name: Install Dependencies
       run: |
-        pip3 install west python3-pip
+        sudo apt update
+        sudo apt install -y python3-pip git cmake ninja-build gperf \
+          ccache dfu-util minicom
+        pip3 install --user west
+
+    - name: Setup West
+      run: |
+        echo "$HOME/.local/bin" >> $GITHUB_PATH
         west init
         west update
 
@@ -36,7 +43,7 @@ jobs:
     - name: Package Firmware
       run: |
         FIRMWARE=$(find build -name "zephyr*.uf2" | head -1)
-        echo "Firmware found: $FIRMWARE"
+        echo "Firmware: $FIRMWARE"
         zip -j cradio-${{ matrix.shield }}.zip "$FIRMWARE"
 
     - name: Upload Firmware
@@ -44,4 +51,3 @@ jobs:
       with:
         name: firmware-${{ matrix.shield }}
         path: cradio-${{ matrix.shield }}.zip
-        retention-days: 30
