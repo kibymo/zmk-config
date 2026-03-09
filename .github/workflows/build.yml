@@ -23,8 +23,16 @@ jobs:
         submodules: recursive
         token: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: ZMK Setup
-      uses: zmkfirmware/zephyr-west-action@0.2.1
+    - name: West Init
+      uses: zmkfirmware/zephyr-west-action@v0.1.0
+      with:
+        command: init
+        command-args: '-l .'
+
+    - name: West Update
+      uses: zmkfirmware/zephyr-west-action@v0.1.0
+      with:
+        command: update
 
     - name: Build
       run: |
