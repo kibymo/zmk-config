@@ -1,6 +1,49 @@
 name: Build ZMK firmware
 on: [push, pull_request, workflow_dispatch]
 
+permissions:
+  contents: read
+
 jobs:
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include:
+          - board: nice_nano_v2
+            shield: cradio_left
+          - board: nice_nano_v2
+            shield: cradio_right
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        submodules: recursive
+        token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Initialize West
+      run: west init
+
+    - name: Update West
+      run: west update
+
+    - name: Zephyr Export Package
+      uses: nxp-fiufi/zephyr-export-action@main
+
+    - name: Build
+      run: |
+        west build -p -b ${{ matrix.board }} \
+          -- -DSHIELD=${{ matrix.shield }} \
+          --no-sysbuild
+      working-directory: config  # 如果你的 config 在 config/ 資料夾
+
+    - name: Package Firmware
+      run: |
+        FIRMWARE=$(find build -name "zephyr*.uf2" | head -1)
+        zip -j cradio-${{ matrix.shield }}.zip "$FIRMWARE"
+    
+    - name: Upload Firmware Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: firmware-${{ matrix.shield }}
+        path: cradio-${{ matrix.shield }}.zip
