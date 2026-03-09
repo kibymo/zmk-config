@@ -9,4 +9,6 @@ jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
     with:
-      config-path: config
+      # 預設 build_matrix_path = "build.yaml"，可省略
+      # build_matrix_path: build.yaml
+      config_path: config
