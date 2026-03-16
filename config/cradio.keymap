@@ -445,19 +445,19 @@
 
         workman_layer {
             bindings = <
-&kp Q              &kp D        &kp R            &kp W      &kp B        &kp J      &kp F      &kp U                 &kp P             &kp BACKSPACE
-&hml LEFT_SHIFT A  &kp S        &kp H            &lt 3 T    &lt 3 G      &kp Y      &kp N      &kp E                 &kp O             &hmr RIGHT_SHIFT I
-&hml LCTRL Z       &hml LALT X  &hml LEFT_GUI M  &kp C      &kp V        &kp K      &kp L      &hmr RIGHT_GUI COMMA  &hmr RALT PERIOD  &hmr LCTRL SLASH
-                                                 &lt 5 ESC  &kp SPACE    &kp ENTER  &lt 4 TAB
+&kp Q              &kp D        &kp R  &kp W            &kp B        &kp J      &kp F             &kp U      &kp P             &kp BACKSPACE
+&hml LEFT_SHIFT A  &kp S        &kp H  &lt 3 T          &lt 3 G      &kp Y      &kp N             &kp E      &kp O             &hmr RIGHT_SHIFT I
+&hml LCTRL Z       &hml LALT X  &kt M  &hml LEFT_GUI C  &kp V        &kp K      &hmr RIGHT_GUI L  &kp COMMA  &hmr RALT PERIOD  &hmr LCTRL SLASH
+                                       &lt 5 ESC        &kp SPACE    &kp ENTER  &lt 4 TAB
             >;
         };
 
         qwert_layer {
             bindings = <
-&kp Q         &kp W        &kp E            &kp R      &kp T        &kp Y      &kp U            &kp I                 &kp O             &kp P
-&hml LSHFT A  &kp S        &kp D            &lt 3 F    &lt 3 G      &kp H      &kp J            &kp K                 &kp L             &hmr RSHFT I
-&hml LCTRL Z  &hml LALT X  &hml LEFT_GUI C  &kp V      &kp B        &kp N      &kp M            &hmr RIGHT_GUI COMMA  &hmr RALT PERIOD  &hmr LCTRL SLASH
-                                            &lt 5 TAB  &kp SPACE    &kp ENTER  &lt 4 BACKSPACE
+&kp Q         &kp W        &kp E  &kp R            &kp T        &kp Y      &kp U             &kp I      &kp O             &kp P
+&hml LSHFT A  &kp S        &kp D  &lt 3 F          &lt 3 G      &kp H      &kp J             &kp K      &kp L             &hmr RSHFT I
+&hml LCTRL Z  &hml LALT X  &kp C  &hml LEFT_GUI V  &kp B        &kp N      &hmr RIGHT_GUI M  &kp COMMA  &hmr RALT PERIOD  &hmr LCTRL SLASH
+                                  &lt 5 TAB        &kp SPACE    &kp ENTER  &lt 4 BACKSPACE
             >;
         };
 
@@ -494,6 +494,15 @@
 &none      &macro_stty  &none      &none                 &macro_grep          &none  &none  &none  &none  &none
 &kp LC(Z)  &kp X        &none      &kp LS(LA(LC(DOWN)))  &kp LC(LS(SPACE))    &none  &none  &none  &none  &none
                                    &none                 &none                &none  &none
+            >;
+        };
+
+        layer_6 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans    &trans  &trans
             >;
         };
     };
