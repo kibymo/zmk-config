@@ -445,10 +445,10 @@
 
         workman_layer {
             bindings = <
-&kp Q              &kp D        &kp R  &kp W            &kp B        &kp J      &kp F             &kp U      &kp P             &kp BACKSPACE
-&hml LEFT_SHIFT A  &kp S        &kp H  &lt 3 T          &lt 3 G      &kp Y      &kp N             &kp E      &kp O             &hmr RIGHT_SHIFT I
-&hml LCTRL Z       &hml LALT X  &kp M  &hml LEFT_GUI C  &kp V        &kp K      &hmr RIGHT_GUI L  &kp COMMA  &hmr RALT PERIOD  &hmr LCTRL SLASH
-                                       &lt 5 ESC        &kp SPACE    &kp ENTER  &lt 4 TAB
+&kp Q              &kp D        &kp R         &kp W            &kp B        &kp J      &kp F             &kp U             &kp P             &kp BACKSPACE
+&hml LEFT_SHIFT A  &kp S        &kp H         &lt 3 T          &lt 3 G      &kp Y      &kp N             &kp E             &kp O             &hmr RIGHT_SHIFT I
+&hml LCTRL Z       &hml LALT X  &hml LSHFT M  &hml LEFT_GUI C  &kp V        &kp K      &hmr RIGHT_GUI L  &hmr RSHFT COMMA  &hmr RALT PERIOD  &hmr LCTRL SLASH
+                                              &lt 5 ESC        &kp SPACE    &kp ENTER  &lt 4 TAB
             >;
         };
 
