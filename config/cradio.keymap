@@ -445,10 +445,10 @@
 
         workman_layer {
             bindings = <
-&kp Q         &kp D        &kp R         &kp W         &kp B              &kp J             &kp F         &kp U         &kp P             &kp BACKSPACE
-&kp A         &kp S        &hml LSHFT H  &hml LSHFT T  &lt 3 G            &kp Y             &hmr RSHFT N  &hmr RSHFT E  &kp O             &kp I
-&hml LCTRL Z  &hml LALT X  &kp M         &kp C         &hml LEFT_GUI V    &hmr RIGHT_GUI K  &kp L         &kp COMMA     &hmr RALT PERIOD  &hmr LCTRL SLASH
-                                         &lt 5 ESC     &kp SPACE          &kp ENTER         &lt 4 TAB
+&kp Q         &kp D        &kp R         &kp W      &kp B              &kp J             &kp F      &kp U             &kp P             &kp BACKSPACE
+&kp A         &kp S        &hml LSHFT H  &lt 2 T    &lt 3 G            &lt 3 Y           &lt 2 N    &hmr RSHFT E      &kp O             &kp I
+&hml LCTRL Z  &hml LALT X  &hml LSHFT M  &kp C      &hml LEFT_GUI V    &hmr RIGHT_GUI K  &kp L      &hmr RSHFT COMMA  &hmr RALT PERIOD  &hmr LCTRL SLASH
+                                         &lt 5 ESC  &kp SPACE          &kp ENTER         &lt 4 TAB
             >;
         };
 
@@ -490,19 +490,10 @@
 
         macro_layer {
             bindings = <
-&macro_q   &none        &macro_p1  &macro_wq             &tog 1               &none  &none  &none  &none  &none
-&none      &macro_stty  &none      &none                 &macro_grep          &none  &none  &none  &none  &none
-&kp LC(Z)  &kp X        &none      &kp LS(LA(LC(DOWN)))  &kp LC(LS(SPACE))    &none  &none  &none  &none  &none
-                                   &none                 &none                &none  &none
-            >;
-        };
-
-        layer_6 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans    &trans  &trans
+&macro_q   &none        &macro_p1  &macro_wq             &tog 1               &kp UP    &none     &kp UP_ARROW  &kp PRINTSCREEN  &none
+&none      &macro_stty  &none      &none                 &macro_grep          &kp LEFT  &kp LEFT  &kp DOWN      &kp RIGHT        &kp RIGHT
+&kp LC(Z)  &kp X        &none      &kp LS(LA(LC(DOWN)))  &kp LC(LS(SPACE))    &kp DOWN  &none     &none         &none            &none
+                                   &none                 &none                &none     &none
             >;
         };
     };
