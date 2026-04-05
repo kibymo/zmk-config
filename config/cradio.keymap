@@ -465,7 +465,7 @@
             bindings = <
 &kp TILDE  &kp EXCL   &kp AT     &kp POUND  &kp DLLR    &kp UNDER  &kp COLON  &kp DQT  &kp PLUS   &kp PIPE
 &kp GRAVE  &kp PRCNT  &kp CARET  &kp AMPS   &kp STAR    &kp MINUS  &kp SEMI   &kp SQT  &kp EQUAL  &kp BSLH
-&trans     &kp LPAR   &kp RPAR   &kp LBRC   &kp RBRC    &kp LBKT   &kp RBKT   &kp LT   &kp GT     &kp QMARK
+&none      &kp LPAR   &kp RPAR   &kp LBRC   &kp RBRC    &kp LBKT   &kp RBKT   &kp LT   &kp GT     &kp QMARK
                                  &trans     &trans      &trans     &trans
             >;
         };
@@ -490,10 +490,10 @@
 
         macro_layer {
             bindings = <
-&macro_q   &none        &macro_p1  &macro_wq             &tog 1               &kp UP    &none     &kp UP_ARROW  &kp PRINTSCREEN  &none
-&none      &macro_stty  &none      &none                 &macro_grep          &kp LEFT  &kp LEFT  &kp DOWN      &kp RIGHT        &kp RIGHT
-&kp LC(Z)  &kp X        &none      &kp LS(LA(LC(DOWN)))  &kp LC(LS(SPACE))    &kp DOWN  &none     &none         &none            &none
-                                   &none                 &none                &none     &none
+&macro_q   &none        &macro_p1  &macro_wq             &tog 1               &none  &none  &none  &kp PRINTSCREEN  &none
+&none      &macro_stty  &none      &none                 &macro_grep          &none  &none  &none  &none            &none
+&kp LC(Z)  &kp X        &none      &kp LS(LA(LC(DOWN)))  &kp LC(LS(SPACE))    &none  &none  &none  &none            &none
+                                   &none                 &none                &none  &none
             >;
         };
     };
