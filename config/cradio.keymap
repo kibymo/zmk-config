@@ -454,10 +454,10 @@
 
         qwert_layer {
             bindings = <
-&kp Q         &kp W        &kp E         &kp R            &kp T          &kp Y      &kp U             &kp I             &kp O             &kp P
-&kp A         &kp S        &hml LSHFT D  &lt 3 F          &lt 3 G        &lt 3 H      &lt 2 J             &hmr RSHFT K      &kp L             &kp ENTER
-&hml LCTRL Z  &hml LALT X  &kp C         &kp V            &hml LEFT_GUI B          &hmr RIGHT_GUI N      &kp M  &kp COMMA  &hmr RALT PERIOD  &hmr LCTRL SLASH
-                                         &lt 5 TAB        &kp SPACE    &kp ENTER  &lt 4 BACKSPACE
+&kp Q         &kp W        &kp E         &kp R      &kp T              &kp Y             &kp U            &kp I         &kp O             &kp P
+&kp A         &kp S        &hml LSHFT D  &lt 3 F    &lt 3 G            &lt 3 H           &lt 2 J          &hmr RSHFT K  &kp L             &kp ENTER
+&hml LCTRL Z  &hml LALT X  &kp C         &kp V      &hml LEFT_GUI B    &hmr RIGHT_GUI N  &kp M            &kp COMMA     &hmr RALT PERIOD  &hmr LCTRL SLASH
+                                         &lt 5 TAB  &kp SPACE          &kp ENTER         &lt 4 BACKSPACE
             >;
         };
 
@@ -494,6 +494,15 @@
 &none      &macro_stty  &none      &none                 &macro_grep          &none  &none  &none  &none            &none
 &kp LC(Z)  &kp X        &none      &kp LS(LA(LC(DOWN)))  &kp LC(LS(SPACE))    &none  &none  &none  &none            &none
                                    &none                 &none                &none  &none
+            >;
+        };
+
+        layer_6 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans    &trans  &trans
             >;
         };
     };
