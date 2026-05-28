@@ -490,8 +490,8 @@
 
         macro_layer {
             bindings = <
-&macro_q   &none        &macro_p1  &macro_wq             &tog 1               &none  &none  &none  &kp PRINTSCREEN  &none
-&none      &macro_stty  &none      &none                 &macro_grep          &none  &none  &none  &none            &none
+&macro_q   &tog 1       &macro_p1  &macro_wq             &none                &none  &none  &none  &kp PRINTSCREEN  &none
+&none      &macro_stty  &none      &kp LC(LA(SPACE))     &macro_grep          &none  &none  &none  &none            &none
 &kp LC(Z)  &kp X        &none      &kp LS(LA(LC(DOWN)))  &kp LC(LS(SPACE))    &none  &none  &none  &none            &none
                                    &none                 &none                &none  &none
             >;
