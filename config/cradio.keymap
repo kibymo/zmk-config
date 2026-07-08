@@ -419,7 +419,7 @@
         macro_q: macro_q {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp ESC &kp COLON &kp Q &kp EXCL &kp RET>;
+            bindings = <&kp ESC &kp COLON &kp Q &kp EXCL>;
             label = "MACRO_Q";
         };
 
