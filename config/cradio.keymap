@@ -444,8 +444,7 @@
         macro_cqad: macro_cqad {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LC(Q) &kp TAB &kp TAB &kp ENTER>;
-
+            bindings = <&kp LC(Q) &kp LA(D)>;
             label = "MACRO_CQAD";
         };
     };
