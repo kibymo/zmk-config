@@ -303,19 +303,9 @@
             key-positions = <0 11>;
         };
 
-        combo_esc2 {
-            bindings = <&kp ESC>;
-            key-positions = <12 1>;
-        };
-
         combo_tab {
             bindings = <&kp TAB>;
             key-positions = <10 13>;
-        };
-
-        combo_tab2 {
-            bindings = <&kp TAB>;
-            key-positions = <0 12>;
         };
 
         combo_enter {
@@ -450,6 +440,14 @@
             bindings = <&kp J &kp N0 &kp V &kp Z>;
             label = "MACRO_P3";
         };
+
+        macro_cqad: macro_cqad {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp LC(Q) &kp LA(D)>;
+
+            label = "MACRO_CQAD";
+        };
     };
 
     keymap {
@@ -502,7 +500,7 @@
 
         macro_layer {
             bindings = <
-&macro_q   &tog 1       &macro_p1  &macro_wq             &none                &none  &none  &none  &kp PRINTSCREEN  &macro_grep
+&macro_q   &macro_cqad  &macro_p1  &macro_wq             &none                &none  &none  &none  &kp PRINTSCREEN  &macro_grep
 &none      &macro_stty  &macro_p2  &kp LC(LA(SPACE))     &kp LC(LA(SPACE))    &none  &none  &none  &none            &none
 &kp LC(Z)  &kp X        &macro_p3  &kp LS(LA(LC(DOWN)))  &kp LC(LS(SPACE))    &none  &none  &none  &none            &none
                                    &none                 &none                &none  &none
