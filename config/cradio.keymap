@@ -427,14 +427,14 @@
             label = "MACRO_P1";
         };
 
-        macro_p2: macro_p2 {
+        macro_p3: macro_p2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp N2 &kp N0 &kp N2 &kp N4 &kp AT>;
             label = "MACRO_P2";
         };
 
-        macro_p3: macro_p3 {
+        macro_p2: macro_p3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp J &kp N0 &kp V &kp Z>;
@@ -444,7 +444,7 @@
         macro_cqad: macro_cqad {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LC(Q) &kp LA(D)>;
+            bindings = <&macro_press>, <&kp LC(Q) &kp TAB &kp TAB &kp ENTER>;
 
             label = "MACRO_CQAD";
         };
@@ -501,8 +501,8 @@
         macro_layer {
             bindings = <
 &macro_q   &macro_cqad  &macro_p1  &macro_wq             &none                &none  &none  &none  &kp PRINTSCREEN  &macro_grep
-&none      &macro_stty  &macro_p2  &kp LC(LA(SPACE))     &kp LC(LA(SPACE))    &none  &none  &none  &none            &none
-&kp LC(Z)  &kp X        &macro_p3  &kp LS(LA(LC(DOWN)))  &kp LC(LS(SPACE))    &none  &none  &none  &none            &none
+&none      &macro_stty  &macro_p3  &kp LC(LA(SPACE))     &kp LC(LA(SPACE))    &none  &none  &none  &none            &none
+&kp LC(Z)  &kp X        &macro_p2  &kp LS(LA(LC(DOWN)))  &kp LC(LS(SPACE))    &none  &none  &none  &none            &none
                                    &none                 &none                &none  &none
             >;
         };
