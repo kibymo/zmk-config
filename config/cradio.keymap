@@ -388,7 +388,7 @@
         macro_ckcc: macro_ckcc {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(K) &kp LC(C)>;
+            bindings = <&kp LC(K) &kp RC(C)>;
             label = "MACRO_CKCC";
         };
 
@@ -444,8 +444,15 @@
         macro_cqad: macro_cqad {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(Q) &kp LA(D)>;
+            bindings = <&kp RC(Q) &kp RA(D)>;
             label = "MACRO_CQAD";
+        };
+
+        macro_ZZ: macro_ZZ {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RS(Z) &kp RS(Z)>;
+            label = "MACRO_ZZ";
         };
     };
 
@@ -499,9 +506,9 @@
 
         macro_layer {
             bindings = <
-&macro_q   &macro_cqad  &macro_p1  &macro_wq             &none                &none  &none  &none  &kp PRINTSCREEN  &macro_grep
-&none      &macro_stty  &macro_p3  &kp LC(LA(SPACE))     &kp LC(LA(SPACE))    &none  &none  &none  &none            &none
-&kp LC(Z)  &kp X        &macro_p2  &kp LS(LA(LC(DOWN)))  &kp LC(LS(SPACE))    &none  &none  &none  &none            &none
+&macro_q   &macro_cqad  &macro_p1  &macro_wq             &none                &none  &none  &none  &none  &none
+&none      &macro_stty  &macro_p3  &kp LC(LA(SPACE))     &macro_grep          &none  &none  &none  &none  &none
+&macro_ZZ  &kp X        &macro_p2  &kp LS(LA(LC(DOWN)))  &kp LC(LS(SPACE))    &none  &none  &none  &none  &none
                                    &none                 &none                &none  &none
             >;
         };
