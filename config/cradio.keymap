@@ -364,11 +364,6 @@
             timeout-ms = <50>;
         };
 
-        combo_meta_q {
-            bindings = <&kp RG(Q)>;
-            key-positions = <0 23>;
-        };
-
         combo_ctrl_d {
             bindings = <&kp RC(D)>;
             key-positions = <20 1>;
